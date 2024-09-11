@@ -1,13 +1,16 @@
 import React from 'react'
+import exclude from "../assets/images/Exclude.png"
+import icon from "../assets/images/icon.png"
 
-export default function AboutUs() {
+
+export default function OurServices() {
   return (
     <section className="about__section">
     <div className="container">
       <div className="row">
         <div className="col-lg-6 col-md-6 col-sm-12 col-12">
           <div className="about__img">
-            <img src="images/Exclude.png" className="Exclude"/>
+            <img src={exclude} className="Exclude"/>
             <div className="img_text">
               <h2>10</h2>
               <span>year of
@@ -27,7 +30,7 @@ export default function AboutUs() {
               <p>A brief overview of your company, highlighting your mission and the key.</p>
             </div>
             <div className="part__section">
-              <img src="images/icon.png"className="icon_part"/>
+              <img src={icon}className="icon_part"/>
               <div className="right__part">
                 <p>Learn about the history, usage d </p>
               </div>

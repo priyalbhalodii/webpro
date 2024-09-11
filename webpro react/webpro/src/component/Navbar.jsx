@@ -1,6 +1,6 @@
 // src/components/Navbar.js
 import React, { useState } from 'react';
-
+import logo from "../assets/images/logo.png"
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -14,7 +14,7 @@ function Navbar() {
         <div className="row">
           <div className="main__section">
             <div className="left__sectionn">
-              <img src="images/logo.png" className="logo__section" alt="Logo" /> 
+              <img src={logo} className="logo__section" alt="Logo" /> 
             </div>
             <div className="right__section">
               <button className="toggle__menu-btn" onClick={toggleMenu}>

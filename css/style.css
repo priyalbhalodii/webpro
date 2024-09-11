@@ -41,10 +41,7 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-h1 {
-  font-family: "Lato";
-  font-style: normal;
-}
+h1,h2,h3,h4,h5,h6{font-family: 'poppins'; font-size:89px;font-weight: 600;}
 nav.navbar.navbar-expand-lg.navbar_bg button.btn {
   background: #fff;
   color: #ff4a9e;
