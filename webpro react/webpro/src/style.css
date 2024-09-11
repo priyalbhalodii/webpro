@@ -1,47 +1,24 @@
-/* src/index.css */
-@import "~bootstrap/dist/css/bootstrap.min.css";
-@import "~font-awesome/css/font-awesome.css";
+/* @font-face {font-family: 'Lato';src: url('../fonts/Lato-Regular.woff2') format('woff2'),url('../fonts/Lato-Regular.woff') format('woff');font-weight: normal;font-style: normal;font-display: swap;} */
 
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato-Regular.woff2") format("woff2"),
-    url("../fonts/Lato-Regular.woff") format("woff");
+/* @font-face {font-family: 'Lato';src: url('../fonts/Lato-Regular.woff2') format('woff2'),url('../fonts/Lato-Regular.woff') format('woff');font-weight: normal;font-style: normal;font-display: swap;} */
+/* @font-face {
+  font-family: 'Timmana';
+  src: url('../fonts/Timmana.woff2') format('woff2'),
+      url('../fonts/Timmana.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato-Regular.woff2") format("woff2"),
-    url("../fonts/Lato-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Timmana";
-  src: url("../fonts/Timmana.woff2") format("woff2"),
-    url("../fonts/Timmana.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-
+} */
 
 body {
   font-family: "Lato" !important;
   overflow-x: hidden;
   font-style: normal;
 }
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+h1 {
+  font-family: "Lato";
+  font-style: normal;
 }
-h1,h2,h3,h4,h5,h6{font-family: 'poppins'; font-size:89px;font-weight: 600;}
 nav.navbar.navbar-expand-lg.navbar_bg button.btn {
   background: #fff;
   color: #ff4a9e;
@@ -276,10 +253,10 @@ img.star_img_1 {
 
 /* Background image for the header section */
 .header__section {
-  background-image: url("../images/header__img.png");
+  /* background-image: url("./assets/images/header__img.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   width: 100%;
   min-height: 710px;
   color: white;
@@ -306,7 +283,7 @@ img.star_img_1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  /* padding: 100px 0; */
 }
 .main__title h2 {
   font-family: Timmana;
@@ -399,7 +376,7 @@ img.second__img {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url("../images/Line 9.png");
+  background-image: url("./assets/images/Line\ 9.png");
   width: 4px;
   height: 100%;
   left: 0;
@@ -743,3 +720,51 @@ img.icon_part {
 .our_work_section .heading__title h1 {
   color: #fff;
 }
+
+.ourservice__border {
+  /* padding: 6px; Adjust as needed */
+  width: 6px;
+  height: 100%;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    #ED5959 47.16%,
+    rgba(255, 255, 255, 0.6)
+  );
+  /* Remove the border styles */
+}
+.ourservice__relative{
+  position: relative;
+}
+.heading__part span{
+  text-decoration: underline;
+}
+.header_img_container{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.header_img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+.header__bg__section{
+  position: relative;
+  padding: 1;
+  
+  z-index: -1;
+}
+
+
+.herosection__container{
+margin-top: 100px;
+}
+
+
