@@ -7,6 +7,8 @@ import OurProgessSection from '../../component/OurProgessSection'
 import OurWorkSection from '../../component/OurWorkSection'
 import OurResultSection from '../../component/OurResultSection'
 import CardSection from '../../component/CardSection'
+import OurClients from '../../component/OurClients'
+
 
 export default function Home() {
   return (
@@ -20,6 +22,7 @@ export default function Home() {
     <OurProgessSection/>
     <OurResultSection/>
     <CardSection/>
+    <OurClients/>
     </div>
   )
 }
