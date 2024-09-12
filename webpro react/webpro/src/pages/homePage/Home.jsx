@@ -1,26 +1,51 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import OurSection from '../../component/OurSection'
-import HeroSection from '../../component/HeroSection'
-import SilderSection from '../../component/SilderSection'
-import OurServices from '../../component/OurServices'
+import OurSection from '../../component/OurSection';
+import HeroSection from '../../component/HeroSection';
+import SilderSection from '../../component/SilderSection';
+import OurServices from '../../component/OurServices';
+import CardStack from '../../component/Animation';
+
 
 
 export default function Home() {
-  // const { scrollYProgress } = useScroll();
-  // const y = useTransform(scrollYProgress, [0, 0.2], [0, -200]);
-  return (
-    <div>
-      <HeroSection/>
-<div className='best_services_section'>
+  const ourSectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ourSectionRef,
+    offset: ['start start', 'center end'], 
+  });
 
-      {/* <motion.div style={{ position: 'sticky', top: '500px', zIndex: -1, y }}>  */}
-        <OurSection />
-      {/* </motion.div> */}
-   
-    <SilderSection/>
-</div>
-    <OurServices/>
+  return (
+    <div >
+      <HeroSection />
+      <div className='best_services_section'  ref={ourSectionRef}>
+        <motion.div className=''
+         
+          style={{
+            position:  useTransform(scrollYProgress, (scroll)=>scroll=="1"? "relative":"sticky"),
+            // position: 'sticky',
+            top: 0,
+            zIndex: -1, // Ensure OurSection stays above SilderSection
+            width: `${scrollYProgress * 100}px`,
+            // Apply fade out and shrink effect
+            opacity: useTransform(scrollYProgress, [0, 0.8], [1, 0.5]), // Opacity decreases as you scroll
+            scale: useTransform(scrollYProgress, [0, 1], [1, 0.8]), // Shrinks as you scroll
+          }}
+        >
+          <OurSection />
+        </motion.div>
+
+        <motion.div 
+          style={{
+            position: 'relative', // Important for z-index to work
+            zIndex: 1, // Ensure SilderSection stays above OurSection
+          }}
+        >
+          <SilderSection />
+        </motion.div>
+      </div>
+      <OurServices />
+      <CardStack/>
     </div>
-  )
+  );
 }
