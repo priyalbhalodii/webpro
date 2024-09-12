@@ -24,10 +24,9 @@ export default function OurSection () {
     
         
 
-       
-  <section className="our_services  " 
-  
-   >
+  <section className="our_services">
+    <div className="services__before">
+
     <div className="container">
       <div className="title">
         <h1>our services</h1>
@@ -49,6 +48,8 @@ export default function OurSection () {
         </div>
       </div>
     </div>
+    </div>
+   
   </section>
  
   )

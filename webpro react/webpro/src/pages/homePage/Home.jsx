@@ -1,11 +1,14 @@
+
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import OurSection from '../../component/OurSection';
-import HeroSection from '../../component/HeroSection';
-import SilderSection from '../../component/SilderSection';
-import OurServices from '../../component/OurServices';
-import CardStack from '../../component/Animation';
-
+import OurSection from '../../component/OurSection'
+import HeroSection from '../../component/HeroSection'
+import SilderSection from '../../component/SilderSection'
+import OurServices from '../../component/OurServices'
+import OurProgessSection from '../../component/OurProgessSection'
+import OurWorkSection from '../../component/OurWorkSection'
+import OurResultSection from '../../component/OurResultSection'
+import CardSection from '../../component/CardSection'
 
 
 export default function Home() {
@@ -44,8 +47,10 @@ export default function Home() {
           <SilderSection />
         </motion.div>
       </div>
-      <OurServices />
-      <CardStack/>
+       <OurServices/>
+    <OurProgessSection/>
+    <OurResultSection/>
+    <CardSection/>
     </div>
   );
 }
