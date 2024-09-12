@@ -7,7 +7,7 @@ import image4  from "../assets/images/image 4.png"
 import header_bottom from "../assets/images/header_bottom.png"
 import header_two from "../assets/images/header_two.png"
 
-import header_img from "../assets/images/header__img.png"
+import header_img from "../assets/images/header_img.png"
 
 export default function HeroSection() {
     console.log( "image4",image4);

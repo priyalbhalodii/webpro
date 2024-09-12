@@ -1,6 +1,8 @@
 import React from 'react'
 import exclude from "../assets/images/Exclude.png"
 import icon from "../assets/images/icon.png"
+import Maskgroup from "../assets/images/Mask group (6).png"
+
 
 
 export default function OurServices() {
@@ -36,13 +38,13 @@ export default function OurServices() {
               </div>
             </div>
             <div className="part__section">
-              <img src="images/icon.png"className="icon_part"/>
+              <img src={icon} className="icon_part"/>
               <div className="right__part">
                 <p>Learn about the history, usage d </p>
               </div>
             </div>
             <div className="part__section">
-              <img src="images/icon.png"className="icon_part"/>
+              <img src={icon} className="icon_part"/>
               <div className="right__part">
                 <p>Learn about the history, usage d </p>
               </div>
@@ -54,7 +56,7 @@ export default function OurServices() {
             </div>
             <div className="iconn__section">
               <div className="icon">
-                <img src="images/Mask group (6).png"/>
+                <img src={Maskgroup}/>
               </div>
             </div>
           </div>

@@ -305,7 +305,15 @@ img.header_bottom {
 }
 img.first__img {
   max-width: 100px;
-  height: 90px;
+  height: 100%;
+  object-fit: contain;
+}
+.bottom__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px;
 }
 img.second__img {
   margin-left: 100px;
@@ -757,8 +765,7 @@ object-fit: cover;
 }
 .header__bg__section{
   position: relative;
-  padding: 1;
-  
+  padding-top: 20px;
   z-index: -1;
 }
 
