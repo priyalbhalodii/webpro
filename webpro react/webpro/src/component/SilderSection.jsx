@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion';
 import maskgroup from  '../assets/images/Mask group (6).png'
 import bottomimage from '../assets/images/image 10.png'
 
 export default function SilderSection() {
+  const { scrollYProgress } = useScroll(
+    
+  );
+ let section = useRef()
+
+
   return (
-    <section className="silder_section">
-    <div className="container">
-      <div className="silderr__title">
+    <section className="silder_section" ref={section} style={{opacity:scrollYProgress}}>
+     <div className="container back-ground">
+      <div className='cards-container' >
+        {/* Card 1 */}
+        <motion.div 
+          className="silderr__title silder_section_card"
+          style={{
+           
+          }}
+        >
         <div className="sub__title">
           <span>01.</span>
           <h3>Web development</h3>
@@ -36,8 +50,14 @@ export default function SilderSection() {
         <div className="bottom__img">
           <img src={bottomimage} className="bottom__image"/>
         </div>
-      </div>
-      <div className="silderr__title">
+      </motion.div>
+      {/* card 2 */}
+      <motion.div
+     className="silderr__title silder_section_card"
+     style={{
+     
+    }}
+       >
         <div className="sub__title">
           <span>01.</span>
           <h3>Web development</h3>
@@ -67,7 +87,9 @@ export default function SilderSection() {
         <div className="bottom__img">
           <img src={bottomimage} className="bottom__image"/>
         </div>
-      </div>
+      </motion.div>
+      
+    </div>
     </div>
    </section>
   )

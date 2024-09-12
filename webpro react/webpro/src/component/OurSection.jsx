@@ -1,11 +1,32 @@
-import React from 'react'
+import { useScroll, useTransform ,motion} from 'framer-motion';
+import React, { useRef, useState } from 'react'
 
 export default function OurSection () {
+  // const ref=useRef();
+  // const { scrollYProgress}=useScroll({
+  //   target:ref,
+  //   offset:["start end","end start"],
+    
+  // });
+  // const opacity=useTransform(scrollYProgress,[0.5,1],[1,0]);
+  // const scale=useTransform(scrollYProgress,[0,0.1],[1,0.8]);
+  // const position=useTransform(scrollYProgress,(pos)=> {return pos===1? "relative":"sticky"})
+  // const y = useTransform(scrollYProgress, [0, 0.2], [0, -200]);
+
+
+
+  // console.log( "y",y);
+
+  //   console.log( "scrollYProgress",scrollYProgress);
+
+  
   return (
-    <div>
+    
         
+
   <section className="our_services">
     <div className="services__before">
+
     <div className="container">
       <div className="title">
         <h1>our services</h1>
@@ -30,6 +51,6 @@ export default function OurSection () {
     </div>
    
   </section>
-    </div>
+ 
   )
 }
