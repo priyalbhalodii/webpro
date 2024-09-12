@@ -1,8 +1,8 @@
 import React from 'react'
 import OurSection from '../../component/OurSection'
-import OurServices from '../../component/OurServices'
 import HeroSection from '../../component/HeroSection'
 import SilderSection from '../../component/SilderSection'
+import OurServices from '../../component/OurServices'
 
 
 export default function Home() {
@@ -11,8 +11,9 @@ export default function Home() {
       <HeroSection/>
 
     <OurSection/>
-    <OurServices/>
+   
     <SilderSection/>
+    <OurServices/>
     </div>
   )
 }

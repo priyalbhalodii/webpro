@@ -483,7 +483,7 @@ h3.heading_section {
   align-items: center;
 }
 .three__button__Section ul li a {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 300;
   line-height: 48px;
   border: 1px solid #958aa8;
@@ -491,6 +491,7 @@ h3.heading_section {
   border-radius: 60px;
   color: #958aa8 !important;
   margin-left: 10px;
+  font-family: 'poppins';
 }
 .silderr__title {
   background: #ffeded;
@@ -571,6 +572,7 @@ img.icon_part {
 }
 .about__button {
   display: flex;
+  align-items: center;
 }
 .about__button .button__text ul li a {
   color: #fff;
@@ -585,9 +587,7 @@ img.icon_part {
   margin-left: 0;
   margin-top: 20px;
 }
-.iconn__section {
-  margin-top: 20px;
-}
+
 .about__img {
   padding-right: 30px;
 }
