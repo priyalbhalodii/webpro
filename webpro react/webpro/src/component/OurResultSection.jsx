@@ -2,6 +2,7 @@ import React from 'react'
 import subtractimg from '../assets/images/Subtract.png'
 import image12 from '../assets/images/silder_img.png'
 import arrowimg from '../assets/images/arrow_img.png'
+import CardBrandSection from './CardBrandSection'
 
 export default function OurResultSection() {
   return (
@@ -15,8 +16,8 @@ export default function OurResultSection() {
             <div className="heading__title">
               <h1>Making<span>“brands” </span>
                 a damn site better.</h1>
-            <div className="row">
-              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+            <div className="d-flex gap-3">
+              {/* <div className="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div className="main__details">
                 <div className="img_section">
                   <img src={image12} className="img__left"/>
@@ -93,7 +94,22 @@ export default function OurResultSection() {
                   </div>
                 </div>
                 </div>
-              </div>
+              </div> */}
+              {/* <div className='col-lg-4 col-md-4 col-sm-12 col-12'> */}
+
+              <CardBrandSection/>
+             
+              {/* </div> */}
+              {/* <div className='col-lg-4 col-md-4 col-sm-12 col-12'> */}
+
+              <CardBrandSection/>
+              {/* </div> */}
+              {/* <div className='col-lg-4 col-md-4 col-sm-12 col-12'> */}
+
+              <CardBrandSection/>
+              {/* </div> */}
+              
+              
 
             </div>
           </div>

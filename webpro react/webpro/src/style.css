@@ -322,6 +322,7 @@ img.first__img {
   align-items: center;
   text-align: center;
   padding-bottom: 0;
+  
 }
 img.second__img {
   margin-left: 100px;
@@ -473,12 +474,15 @@ img.second__img {
   
 }
 .back-ground{
-  /* background-color: white; */
+  background-color: white;
 }
 .icon {
   background: #453b57;
-  padding: 10px;
-  border-radius: 50px;
+  
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius:100%;
 }
 .silder_section h3 {
   font-family: Poppins;
@@ -808,7 +812,7 @@ margin-top: 100px;
   position: relative;
  
 }
-
+/* 
 .cards-container{
 position: relative;
 }
@@ -816,8 +820,8 @@ position: relative;
 position: sticky;
 top: 0;
 
-}
-=======
+} */
+
 our_work_section{padding: 100px 0; background: #453B57;height: 780px;}
 .our_work_section .title h1 {color: #fff;}
 .our_work_section .heading__title h1 {color: #fff;}
@@ -964,10 +968,10 @@ img.img__left {
   border-radius: 20px;
 }
 
-.icon {
+/* .icon {
   display: inline-block;
-  animation: bounce 2s infinite; /* Applying the bounce animation */
-}
+  animation: bounce 2s infinite;
+} */
 
 @keyframes bounce {
   0%, 100% {
@@ -988,9 +992,9 @@ img.img__left {
   }
 }
 
-.icon {
+/* .icon {
   animation: fadeBounce 2s infinite;
-}
+} */
 .silderr__title {
   opacity: 0;
   transform: translateY(20px);
@@ -1021,11 +1025,11 @@ img.img__left {
   animation: slideInLeft 1s 0.7s forwards ease-in-out; /* Slide in the button */
 }
 
-.iconn__section .icon {
+/* .iconn__section .icon {
   opacity: 0;
   transform: scale(0.5);
-  animation: iconBounce 1s 0.9s forwards ease-in-out; /* Bounce effect for the icon */
-}
+  animation: iconBounce 1s 0.9s forwards ease-in-out;
+} */
 
 .heading_section {
   opacity: 0;
@@ -1039,11 +1043,7 @@ img.img__left {
   animation: slideInLeft 1.2s 1.2s forwards ease-in-out; /* Slide in buttons */
 }
 
-.bottom__img .bottom__image {
-  opacity: 0;
-  transform: scale(0.8);
-  animation: fadeScaleIn 1.2s 1.5s forwards ease-in-out; /* Scale in bottom image */
-}
+
 
 /* Keyframes */
 @keyframes fadeInUp {
@@ -1113,11 +1113,11 @@ img.img__left {
   }
 }
 
-.icon img {
+/* .icon img {
   opacity: 0;
   transform: scale(0.8);
   animation: fadeScaleBounce 1.5s forwards ease-in-out;
-}
+} */
 
 @keyframes fadeScaleBounce {
   0% {
@@ -1189,12 +1189,12 @@ img.img__left {
   transform: translateY(20px);
   animation: fadeSlideUp 1.5s 1.6s forwards ease-in-out; /* Fade and slide button */
 }
-
+/* 
 .iconn__section .icon {
   opacity: 0;
   transform: scale(0.5);
-  animation: bounceIn 1.5s 1.8s forwards ease-in-out; /* Bounce effect for icon */
-}
+  animation: bounceIn 1.5s 1.8s forwards ease-in-out; 
+} */
 
 /* Keyframes */
 @keyframes sectionFadeIn {
@@ -1453,4 +1453,47 @@ img.img__left {
   background-position: center right;
   z-index: -1; /* Ensures it sits behind the content */
 }
+.custom-height{
+  height: 15px;
+}
+.carousel-active-button{
+  width: 20px;
+  background-color: rgb(0, 42, 255);
+  border-radius: 25px !important; 
+}
+/* ai ggenetated style */
+.animation{
+  transition: all 2s linear;
+  
+}
+.bottom__img {
+  height: 0; 
+  overflow: hidden;
+  transition: height 0.5s ease ;
+}
 
+.bottom__img.show {
+  height: 450px; /* Now it's correct */
+  
+}
+
+
+.icon {
+  transition: transform 0.3s ease; /* Add transition to the .icon class */
+}
+
+.rotate-icon {
+  transform: rotate(180deg); 
+}
+.our-progress-header{
+  top:80px;
+  z-index: -1;
+}
+.our-progress-detailes{
+  z-index:1;
+  background:white;
+}
+ .card-brand{
+  /* max-height: ; */
+  max-width: 33%;
+}
