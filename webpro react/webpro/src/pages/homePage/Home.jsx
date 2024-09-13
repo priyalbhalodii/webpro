@@ -15,6 +15,9 @@ import Form from '../../component/Form';
 import AccordionWrapper from '../../component/Accordion/AccordionWrapper';
 import AccordionItem from '../../component/Accordion/AccordionItem';
 import CardSlider from '../../component/cardSlider/CardSlider';
+import ContactUs from '../../component/ContactUs';
+import FooterSection from '../../component/FooterSection';
+import OurClients from '../../component/OurClients.jsx';
 
 
 export default function Home() {
@@ -74,6 +77,9 @@ export default function Home() {
        <OurServices/>
     <OurProgessSection/>
     <OurResultSection/>
+    <OurClients/>
+    <OurWorkSection/>
+    <ContactUs/>
     {/* <BlogSection/> */}
    
     {/* <Form/> */}
@@ -85,6 +91,8 @@ export default function Home() {
               <AccordionItem key={index} index={index} title={item.title} description={item.description} />
             ))}
           </AccordionWrapper>
+          
+          <FooterSection/>
     </div>
   );
 }
