@@ -1,14 +1,23 @@
-import React from 'react'
-
+import React, { useRef } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion';
 export default function OurProgessSection() {
+  const targetRef=useRef()
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ['start start', 'center start'], // Adjust offset as needed
+  });
+let opacity=useTransform(scrollYProgress, [0, 0.5], [1, 0]) // Opacity decreases as you
+let scale= useTransform(scrollYProgress, [0, 1], [1, 0.5])
   return (
-    <section className="Our__Process__section">
+    <section className="Our__Process__section position-relative " ref={targetRef}>
     <div className="container">
-      <div className="our_process__title">
+      {/* header */}
+      <motion.div className="our_process__title position-sticky our-progress-header" style={{opacity,scale}} >
         <h5>Our Process</h5>
         <h1>We develop website this <span>“process”</span></h1>
-      </div>
-      <div className="process__Section">
+      </motion.div>
+      {/* detailes */}
+      <div className="process__Section our-progress-detailes ">
         <div className="row">
           <div className="col-lg-2 col-md-2 col-sm-12 col-12">
             <div className="number__Section">
