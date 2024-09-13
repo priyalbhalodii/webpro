@@ -9,12 +9,19 @@ import OurProgessSection from '../../component/OurProgessSection'
 import OurWorkSection from '../../component/OurWorkSection'
 import OurResultSection from '../../component/OurResultSection'
 import CardSection from '../../component/CardSection'
+
 import BlogSection from '../../component/BlogSection';
 import Carousel from '../../component/Carousel';
 import Form from '../../component/Form';
 import AccordionWrapper from '../../component/Accordion/AccordionWrapper';
 import AccordionItem from '../../component/Accordion/AccordionItem';
 import CardSlider from '../../component/cardSlider/CardSlider';
+
+
+import OurClients from '../../component/OurClients'
+import ContactUs from '../../component/ContactUs';
+import FaqSection from '../../component/FaqSection'
+import FooterSection from '../../component/FooterSection'
 
 
 export default function Home() {
@@ -73,6 +80,7 @@ export default function Home() {
       </div>
        <OurServices/>
     <OurProgessSection/>
+
     <OurResultSection/>
     {/* <BlogSection/> */}
    
@@ -85,6 +93,16 @@ export default function Home() {
               <AccordionItem key={index} index={index} title={item.title} description={item.description} />
             ))}
           </AccordionWrapper>
+
+  <OurResultSection/> 
+    {/* <CardSection/> */}
+    <OurClients/>
+    <OurWorkSection/>
+    <contactus/>
+    <ContactUs/>
+    {/* <FaqSection/> */}
+    <FooterSection/>
+
     </div>
   );
 }
