@@ -10,8 +10,9 @@ import OurWorkSection from '../../component/OurWorkSection'
 import OurResultSection from '../../component/OurResultSection'
 import CardSection from '../../component/CardSection'
 import OurClients from '../../component/OurClients'
-
-
+import ContactUs from '../../component/ContactUs';
+import FaqSection from '../../component/FaqSection'
+import FooterSection from '../../component/FooterSection'
 
 export default function Home() {
   const ourSectionRef = useRef(null);
@@ -51,9 +52,14 @@ export default function Home() {
       </div>
        <OurServices/>
     <OurProgessSection/>
-    <OurResultSection/>
-    <CardSection/>
+  <OurResultSection/> 
+    {/* <CardSection/> */}
     <OurClients/>
+    <OurWorkSection/>
+    <contactus/>
+    <ContactUs/>
+    {/* <FaqSection/> */}
+    <FooterSection/>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import silderimg from '../assets/images/silder_img.png'
 
 export default function OurWorkSection() {
   return (
-    <section className="our_work_section">
+    <section className="our_work_section ">
         <div className="container right_side">
           <div className="row">
             <div className="title">
@@ -65,6 +65,9 @@ export default function OurWorkSection() {
                 </div>
             </div>
           </div>
+        </div>
+        <div className="ourservices__border">
+          
         </div>
       </section>
       
