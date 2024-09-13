@@ -1184,7 +1184,7 @@ img.img__left {
 }
 
 .icon {
-  animation: fadeBounce 2s infinite;
+  /* animation: fadeBounce 2s infinite; */
 }
 
 .silderr__title {
@@ -1222,9 +1222,9 @@ img.img__left {
 }
 
 .iconn__section .icon {
-  opacity: 0;
+  /* opacity: 0;
   transform: scale(0.5);
-  animation: iconBounce 1s 0.9s forwards ease-in-out;
+  animation: iconBounce 1s 0.9s forwards ease-in-out; */
   /* Bounce effect for the icon */
 }
 
@@ -1416,12 +1416,6 @@ img.img__left {
   /* Fade and slide button */
 }
 
-.iconn__section .icon {
-  opacity: 0;
-  transform: scale(0.5);
-  animation: bounceIn 1.5s 1.8s forwards ease-in-out;
-  /* Bounce effect for icon */
-}
 
 /* Keyframes */
 @keyframes sectionFadeIn {
@@ -1910,9 +1904,7 @@ button.message__button {
 }
 
 
-.icon {
-  transition: transform 0.3s ease; /* Add transition to the .icon class */
-}
+
 
 .rotate-icon {
   transform: rotate(180deg); 
@@ -1930,11 +1922,12 @@ button.message__button {
 }
 .icon {
   background: #453b57;
-  
+  transition: all 0.5s ease-in-out;
   height: 40px;
   width: 40px;
   color: white;
   border-radius:100%;
+  
 }
 .silder_section {
   /* padding: 100px 0; */
@@ -1942,7 +1935,7 @@ button.message__button {
   
 }
 .bottom__img {
-  /* height: 0;  */
+  height: 0; 
   overflow: hidden;
   transition: height 0.5s ease ;
 }
@@ -1950,4 +1943,26 @@ button.message__button {
 .bottom__img.show {
   height: 450px; /* Now it's correct */
   
+}
+
+.faq__main__section {
+  padding: 100px 0;
+}
+
+.faq__sub_title p {
+  text-align: center;
+  font-size: 40px;
+}
+
+.look__here h2 {
+  text-align: center;
+  font-size: 90px;
+  max-width: 820px;
+  margin: 0 auto;
+  font-family: 'Poppins';
+  padding-bottom: 50px;
+}
+
+.look__here span {
+  color: #ED5959;
 }

@@ -16,8 +16,8 @@ const AccordionItem = (props) => {
      }
 
     return (
-        <div className="accordion-item container">
-            <h3 className="accordion-title">
+        <div className="accordion-item container ">
+            <h3 className="accordion-title ">
                 <button 
                     onClick={(e) => eventHandler(e, props.index)}
                     className={ active === props.index ? 'active' : 'inactive'}
@@ -25,7 +25,7 @@ const AccordionItem = (props) => {
                     aria-controls={ 'sect-' + (props.index + 1) } 
                     aria-disabled={ active === props.index ? 'true' : 'false' }
                 >
-                    <span className="title-wrapper">{props.title}</span>  
+                    <span className="title-wrapper ">{props.title}</span>  
                     <span className="icon-wrapper">
                         {/* Use FontAwesome icons here */}
                         

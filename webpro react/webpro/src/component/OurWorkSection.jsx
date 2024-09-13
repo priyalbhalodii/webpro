@@ -1,5 +1,7 @@
 import React from 'react'
 import silderimg from '../assets/images/silder_img.png'
+import SilderSection from './SilderSection'
+import CardSlider from './cardSlider/CardSlider'
 
 export default function OurWorkSection() {
   return (
@@ -12,57 +14,7 @@ export default function OurWorkSection() {
             <div className="heading__title">
               <h1>Making<span>“brands” </span>
                 a damn site better.</h1>
-                <div className="mainn__silder">
-                  <div className="silder">
-                    <div className="img">
-                      <img src={silderimg} className="img"/>
-                    </div>
-                    <div className="mock__up">
-                      <div className="mock_title">
-                        <ul>
-                          <li>
-                            <a>Website design</a>
-                            <a>Ui/Ux</a>
-                            <a>Mock up</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="silder">
-                    <div className="img">
-                      <img src={silderimg} className="img"/>
-                    </div>
-                    <div className="mock__up">
-                      <div className="mock_title">
-                        <ul>
-                          <li>
-                            <a>Website design</a>
-                            <a>Ui/Ux</a>
-                            <a>Mock up</a>
-                          </li>
-                        </ul>
-                      </div>
-                     
-                    </div>
-                  </div>
-                  <div className="silder">
-                    <div className="img">
-                      <img src={silderimg} className="img"/>
-                    </div>
-                    <div className="mock__up">
-                      <div className="mock_title">
-                        <ul>
-                          <li>
-                            <a>Website design</a>
-                            <a>Ui/Ux</a>
-                            <a>Mock up</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <CardSlider/>
             </div>
           </div>
         </div>

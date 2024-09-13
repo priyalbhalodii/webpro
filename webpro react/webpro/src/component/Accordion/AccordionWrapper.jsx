@@ -16,7 +16,7 @@ const AccordionWrapper = (props) => {
             }}
         >
         <div className="accordion-wrapper">
-            <form>
+            <form >
                 {props.children}
             </form>
         </div>
