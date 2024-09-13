@@ -14,6 +14,7 @@ import Carousel from '../../component/Carousel';
 import Form from '../../component/Form';
 import AccordionWrapper from '../../component/Accordion/AccordionWrapper';
 import AccordionItem from '../../component/Accordion/AccordionItem';
+import CardSlider from '../../component/cardSlider/CardSlider';
 
 
 export default function Home() {
@@ -75,8 +76,9 @@ export default function Home() {
     <OurResultSection/>
     {/* <BlogSection/> */}
    
-    <Form/>
+    {/* <Form/> */}
 
+      {/* <CardSlider/> */}
     {/* accorodian */}
     <AccordionWrapper>
             {data.map((item, index) => (

@@ -16,7 +16,7 @@ export default function CardSection({ open }) {
 
   return (
     <div className="silderr__title card ">
-      <div className=" ">
+      <div className="w-100 ">
         <div className="sub__title ">
           <span>01.</span>
           <h3>Web development</h3>

@@ -3,6 +3,8 @@ import subtractimg from '../assets/images/Subtract.png'
 import image12 from '../assets/images/silder_img.png'
 import arrowimg from '../assets/images/arrow_img.png'
 import CardBrandSection from './CardBrandSection'
+import SilderSection from './SilderSection'
+import CardSlider from './cardSlider/CardSlider'
 
 export default function OurResultSection() {
   return (
@@ -16,102 +18,10 @@ export default function OurResultSection() {
             <div className="heading__title">
               <h1>Making<span>“brands” </span>
                 a damn site better.</h1>
-            <div className="d-flex gap-3">
-              {/* <div className="col-lg-4 col-md-4 col-sm-12 col-12">
-                <div className="main__details">
-                <div className="img_section">
-                  <img src={image12} className="img__left"/>
-                </div>
-                <div className="all__section">
-                  <div className="main__part">
-                    <div className="desinger__name">
-                      <span>Website design</span>
-                    </div>
-                    <div className="desinger__name">
-                      <span>Website design</span>
-                    </div>
-                    <div className="desinger__name">
-                      <span>Website design</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="text__details">
-                  <p>Learn about the history, usage and variations of Lorem Ipsum, the industry's standard dummy </p>
-                  <div className="text__img">
-                    <img src={arrowimg} className="arrow_img"/>
-                  </div>
-                </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
-              <div className="main__details">
-                <div className="img_section">
-                  <img src={image12} className="img__left"/>
-                </div>
-                <div className="all__section">
-                  <div className="main__part">
-                    <div className="desinger__name">
-                      <span>Website design</span>
-                    </div>
-                    <div className="desinger__name">
-                      <span>Website design</span>
-                    </div>
-                    <div className="desinger__name">
-                      <span>Website design</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="text__details">
-                  <p>Learn about the history, usage and variations of Lorem Ipsum, the industry's standard dummy </p>
-                  <div className="text__img">
-                    <img src={arrowimg} className="arrow_img"/>
-                  </div>
-                </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
-              <div className="main__details">
-                <div className="img_section">
-                  <img src={image12} className="img__left"/>
-                </div>
-                <div className="all__section">
-                  <div className="main__part">
-                    <div className="desinger__name">
-                      <span>Website design</span>
-                    </div>
-                    <div className="desinger__name">
-                      <span>Website design</span>
-                    </div>
-                    <div className="desinger__name">
-                      <span>Website design</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="text__details">
-                  <p>Learn about the history, usage and variations of Lorem Ipsum, the industry's standard dummy </p>
-                  <div className="text__img">
-                    <img src={arrowimg} className="arrow_img"/>
-                  </div>
-                </div>
-                </div>
-              </div> */}
-              {/* <div className='col-lg-4 col-md-4 col-sm-12 col-12'> */}
+                <div className='slider_section'>
 
-              <CardBrandSection/>
-             
-              {/* </div> */}
-              {/* <div className='col-lg-4 col-md-4 col-sm-12 col-12'> */}
-
-              <CardBrandSection/>
-              {/* </div> */}
-              {/* <div className='col-lg-4 col-md-4 col-sm-12 col-12'> */}
-
-              <CardBrandSection/>
-              {/* </div> */}
-              
-              
-
-            </div>
+            <CardSlider/>
+                </div>
           </div>
           </div>
         </div>
