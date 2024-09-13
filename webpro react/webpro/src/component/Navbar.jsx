@@ -18,8 +18,8 @@ function Navbar() {
             </div>
             <div className="right__section">
               <button className="toggle__menu-btn" onClick={toggleMenu}>
-                <span className="open-icon">☰</span>
-                <span className="close-icon">✖</span>
+               {isMenuOpen ?<span className=" open-icon animate">✖ </span> :
+                <span className="open-icon">☰</span> }
               </button>
               <div className={`menu ${isMenuOpen ? 'show' : ''}`} id="menu"> 
                 <ul>
