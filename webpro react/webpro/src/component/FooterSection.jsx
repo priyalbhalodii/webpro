@@ -6,8 +6,8 @@ export default function FooterSection() {
     <div>
         <div className="footer__section">
             <div className="container">
-                <div className="row">
-                    <div className="footer__title">
+                <div className="row justify-center">
+                    <div className="footer__title text-center">
                         <h3>Advanced <span>Web Pro</span></h3>
                     </div>
                     <div className="footer__webpro">

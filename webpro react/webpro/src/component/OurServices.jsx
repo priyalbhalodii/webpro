@@ -10,7 +10,7 @@ export default function OurServices() {
     <section className="about__section">
     <div className="container">
       <div className="row">
-        <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
           <div className="about__img">
             <img src={exclude} className="Exclude"/>
             <div className="img_text">
@@ -20,7 +20,7 @@ export default function OurServices() {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
           <div className="main__about">
             <div className="title">
               <h1>our services</h1>

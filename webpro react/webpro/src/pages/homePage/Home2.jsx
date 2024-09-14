@@ -12,13 +12,13 @@ export default function Home() {
         <h1>our services</h1>
       </div>
       <div className="row">
-        <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
           <div className="heading__title">
             <h1>We provide
               best <span>”Service”</span></h1>
           </div>
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
         <div className="sub__heading__title">
           <span>Provide a summary of your services, focusing on how you solve common IT problems.</span>
         </div>
@@ -99,7 +99,7 @@ export default function Home() {
     <section className="about__section">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
             <div className="about__img">
               <img src="images/Exclude.png" className="Exclude"/>
               <div className="img_text">
@@ -109,7 +109,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
             <div className="main__about">
               <div className="title">
                 <h1>our services</h1>
@@ -163,12 +163,12 @@ export default function Home() {
         </div>
         <div className="process__Section">
           <div className="row">
-            <div className="col-lg-2 col-md-2 col-sm-12 col-12">
+            <div className="lg:w-[16.66%] md:w-[16.66%] sm:w-full w-full">
               <div className="number__Section">
                 <span>.01</span>
               </div>
             </div>
-            <div className="col-lg-10 col-md-10 col-sm-12 col-12">
+            <div className="lg:w-[83.3%] md:w-[83.3%] sm:w-full w-full">
               <div className="reserach__section">
                 <h2>Research and Discovery</h2>
               </div>
@@ -193,12 +193,12 @@ export default function Home() {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-2 col-md-2 col-sm-12 col-12">
+            <div className="lg:w-[16.66%] md:w-[16.66%] sm:w-full w-full">
               <div className="number__Section">
                 <span>.02</span>
               </div>
             </div>
-            <div className="col-lg-10 col-md-10 col-sm-12 col-12">
+            <div className="lg:w-[83.3%] md:w-[83.3%] sm:w-full w-full">
               <div className="reserach__section">
                 <h2>Design and Prototyping</h2>
               </div>
@@ -223,12 +223,12 @@ export default function Home() {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-2 col-md-2 col-sm-12 col-12">
+            <div className="lg:w-[16.66%] md:w-[16.66%] sm:w-full w-full">
               <div className="number__Section">
                 <span>.03</span>
               </div>
             </div>
-            <div className="col-lg-10 col-md-10 col-sm-12 col-12">
+            <div className="lg:w-[83.3%] md:w-[83.3%] sm:w-full w-full">
               <div className="reserach__section">
                 <h2>Development And Testing</h2>
               </div>

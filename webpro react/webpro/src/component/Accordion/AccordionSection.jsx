@@ -28,7 +28,7 @@ export default function AccordionSection() {
             <div className="faq__sub_title">
             <p>Faq</p>    
             </div>
-            <div className="look__here">
+            <div className="look__here ">
                 <h2>Any question<span> "look here"</span></h2>
             </div>
         </div>

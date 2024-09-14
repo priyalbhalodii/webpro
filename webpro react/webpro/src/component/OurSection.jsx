@@ -24,7 +24,7 @@ export default function OurSection () {
     
         
 
-  <section className="our_services">
+  <section className="our_services  ">
     {/* <div className='our_services_img'> */}
 
     
@@ -35,7 +35,7 @@ export default function OurSection () {
         <h1>our services</h1>
       </div>
       <div className="row ">
-        <div className="col-lg-6 col-md-6 col-sm-12 col-12 ourservice__relative">
+        <div className="lg:w-[50%] md:w-[50%] sm:w-full  w-full ourservice__relative">
           <div className="heading__title">
             <h1>We provide
               best <span>”Service”</span></h1>
@@ -44,7 +44,7 @@ export default function OurSection () {
           
         </div>
 
-        <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
         <div className="sub__heading__title">
           <span>Provide a summary of your services, focusing on how you solve common IT problems.</span>
         </div>

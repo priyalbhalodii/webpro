@@ -16,7 +16,7 @@ export default function CardSection({ open }) {
 
   return (
     <div className="silderr__title card ">
-      <div className="w-100 ">
+      <div className="w-full ">
         <div className="sub__title ">
           <span>01.</span>
           <h3>Web development</h3>
@@ -37,7 +37,7 @@ export default function CardSection({ open }) {
         <h3 className="heading_section">
           Crafting digital experiences where beauty meets ROI, turning heads and unlocking revenue potential with every click.
         </h3>
-        <div className="three__button__Section">
+        <div className="three__button__Section mb-6">
           <ul>
             <li>
               <a>Web development</a>

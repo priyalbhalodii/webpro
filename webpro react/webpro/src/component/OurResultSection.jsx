@@ -28,17 +28,17 @@ export default function OurResultSection() {
       </section>
     <div className="our__result__section">
     <div className="container">
-      <div className="row">
+      <div className="">
         <div className="our_process__title">
           <h5>Our Process</h5>
           <h1>We develop website this <span>“process”</span></h1>
         </div>
         <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
             <div className="mainn__result__section">
               <div className="mock_title">
                  <div className="row">
-                  <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+                  <div className="lg:w-[30%] md:w-[50%] sm:w-full w-full">
                     <div className="web_developemnt">
                       <ul>
                         <li>
@@ -48,7 +48,7 @@ export default function OurResultSection() {
                       </ul>
                     </div>
                   </div>
-                  <div className="col-lg-7 col-md-7 col-sm-12 col-12">
+                  <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
                   <div className="web_developemnt">
                       <ul>
                         <li>
@@ -62,7 +62,7 @@ export default function OurResultSection() {
             </div>
           </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
             <div className="right__result__section">
               <p>Provide a summary of your services, focusing on how you solve common IT problems.</p>
             </div>
@@ -70,8 +70,8 @@ export default function OurResultSection() {
       </div>
     </div>
     <div className="mainn__star">
-      <div className="row">
-        <div className="col-lg-9 col-md-9 col-sm-12 col-12">
+      <div className="flex gap-[25px]">
+        <div className="lg:w-[65%] md:w-[74.7%] sm:w-full w-full">
           <div className="star__img">
             <img src={subtractimg}/>
           </div>
@@ -81,7 +81,7 @@ export default function OurResultSection() {
             Reviews</span>
           </div>
         </div>
-        <div className="col-lg-3 col-md-3 col-sm-12 col-12">
+        <div className="lg:w-[28%] md:w-[24.9%] sm:w-full w-full">
           <div className="reviews__section">
             <div className="sub__reviwes">
               <h3>10+</h3>

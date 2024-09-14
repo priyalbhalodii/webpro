@@ -31,8 +31,8 @@ export default function CardSlider() {
         className="card-slider card-container"
        
       >
-        {slides.map((slide) => (
-          <div className="brand_card" key={slide.key}
+        {slides.map((slide,index) => (
+          <div className="brand_card" key={index}
           style={{
             transform: `translateX(-${currentSlide * 100}%)`,
             transition: "transform 0.5s ease-in-out", // Add smooth transition

@@ -17,7 +17,7 @@ export default function ContactUs() {
                     </div>
                     <div className="form__section">
                         <div className="row">
-                            <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
                                 <div className="form__details">
                                     <form>
                                         <input type="text" id="fname" name="fname" placeholder="Username" className="white-input" /><br />
@@ -28,7 +28,7 @@ export default function ContactUs() {
                                     </form>
                                 </div>
                             </div>
-                            <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
                                 <div className="reviews__section">
                                     <div className="sub__reviwes">
                                         <h3>Email</h3>

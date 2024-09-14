@@ -28,7 +28,7 @@ export default function Form() {
   return (
     <form onSubmit={handleSubmit} className="container mt-5">
       <div className="row">
-        <div className="col-md-6 mb-3">
+        <div className="md:w-[50%] mb-3">
           <input
             type="text"
             className="form-control"
@@ -38,7 +38,7 @@ export default function Form() {
             value={formData.firstName}
           />
         </div>
-        <div className="col-md-6 mb-3">
+        <div className="md:w-[50%] mb-3">
           <input
             type="text"
             className="form-control"
