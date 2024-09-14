@@ -18,14 +18,21 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    border-radius: 100%;
+    background: #453b57;
+    color: white;
+    /* padding: 15px; */
+    height: 45px;
+    width: 45px;
     /* Add styling for the buttons */
   }
   
   .prev-button {
-    left: 10px;
+    left: 130px;
+    z-index: 2;
   }
   
   .next-button {
-    right: 10px;
+    right:130px;
   }
   

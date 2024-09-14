@@ -25,6 +25,9 @@ export default function OurSection () {
         
 
   <section className="our_services">
+    {/* <div className='our_services_img'> */}
+
+    
     <div className="services__before">
 
     <div className="container">
@@ -49,7 +52,7 @@ export default function OurSection () {
       </div>
     </div>
     </div>
-   
+    {/* </div> */}
   </section>
  
   )

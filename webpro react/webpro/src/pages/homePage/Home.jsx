@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div >
       <HeroSection />
-      <div className='best_services_section' ref={ourSectionRef} >
+      <div className='best_services_section our_services_img' ref={ourSectionRef} >
         <motion.div  className=''
          
           style={{

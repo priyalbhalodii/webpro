@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
-import ReviewCard from './ReviewCard'; // Assuming this component displays a single review
-import './index.css'
+import ReviewCard from './ReviewCard';
+import './index.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 export default function ReviewSlider() {
-    const reviews = [0,1,2]
+  const reviews = [0, 1, 2];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevSlide = () => {
@@ -20,7 +23,7 @@ export default function ReviewSlider() {
   return (
     <div className="review-slider">
       <button className="prev-button" onClick={handlePrevSlide}>
-        Previous
+        <FontAwesomeIcon icon={faChevronLeft} />
       </button>
 
       <div className="slide-container" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
@@ -32,7 +35,7 @@ export default function ReviewSlider() {
       </div>
 
       <button className="next-button" onClick={handleNextSlide}>
-        Next
+        <FontAwesomeIcon icon={faChevronRight} />
       </button>
     </div>
   );
