@@ -7,38 +7,51 @@ import image4  from "../assets/images/image 4.png"
 import header_bottom from "../assets/images/header_bottom.png"
 import header_two from "../assets/images/header_two.png"
 
-import header_img from "../assets/images/header_img.png"
+import header_img from "../assets/images/Red And blue.png"
 
 export default function HeroSection() {
     console.log( "image4",image4);
   return (
-    <section className="header__section bottom__bg__section header__bg__section">
-        <div className='header_img_container'>
-            <img src={header_img} alt=""  className='header_img'/>
-        </div>
+    <section className=" header__section bottom__bg__section relative header__bg__section  ">
+        <div className='header_img_container '>
+  <video 
+    src="https://res.cloudinary.com/drvcqytfb/video/upload/v1726309552/pqikimbsqiqzwrlhuvfr.mp4" 
+    autoPlay 
+    muted 
+    loop 
+    className='header_img w-full h-full object-cover' 
+  /> 
+  <img 
+    src={header_img} 
+    alt=""  
+    className='mt-[90px] mb-[100px] header_img  h-[100%]  object-cover' 
+  />
+</div> 
+
 
   <div className="container herosection__container">
     <div className="row">
         
       <div className="left__section">
-        <div className="heading__part">
+        <div className="heading__part w-[45%]">
           <h1>Webpro</h1>
           <p>We are creative web design &
             branding agency based in London that craft beautiful
             work for brand who <span>refuse to blend in.</span></p>
         </div>
-        <div className="image__Section">
-          <img src={header_two} className="header_two"/>
-        </div>
-        <div className="main__title">
+        {/* <div className="w-[60px]">
+          <img  className="header_two"/>
+        </div> */}
+        <div className="main__title w-[45%]">
           <h2>
             Advanced
             web pro
           </h2>
         </div>
       </div>
-      <img src={header_bottom} className="header_bottom" alt="header_bottom"/>
-      <div className="bottom__img">
+      <img src={header_bottom} className="mt-0" alt="header_bottom"/>
+      
+      <div className="bottom__img ">
         <img src={upstockImg} className="first__img"/>
         <img src={ellipse} className="second__img"/>
         <img src={fiverrImg} className="first__img"/>
@@ -49,6 +62,7 @@ export default function HeroSection() {
       </div>
     </div>
   </div>
+  
  </section>
   )
 }

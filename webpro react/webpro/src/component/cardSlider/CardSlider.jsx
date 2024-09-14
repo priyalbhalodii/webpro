@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import CardBrandSection from "../CardBrandSection";
 import './index.css'
 
 export default function CardSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const sliderRef = useRef(null);
 
   const slides = [
     <CardBrandSection key={1} />,
@@ -17,33 +18,51 @@ export default function CardSlider() {
   ];
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % (slides.length-2));
-    }, 3000); // Change slide every 3 seconds (3000 milliseconds)
+    let intervalId;
 
-    return () => clearInterval(interval); // Clear interval on component unmount
-  }, [slides.length]); // Restart interval if slides.length changes
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        intervalId = setInterval(() => {
+          setCurrentSlide((prevSlide) => (prevSlide + 1) % (slides.length - 2));
+        }, 3000); 
+      } else {
+        clearInterval(intervalId);
+      }
+    });
+
+    if (sliderRef.current) {
+      observer.observe(sliderRef.current);
+    }
+
+    return () => {
+      clearInterval(intervalId);
+      if (sliderRef.current) {
+        observer.unobserve(sliderRef.current);
+      }
+    };
+  }, [slides.length]); 
 
   return (
     <div className="">
-    <div className=" container float-right">
-      <div
-        className="card-slider card-container"
-       
-      >
-        {slides.map((slide,index) => (
-          <div className="brand_card" key={index}
-          style={{
-            transform: `translateX(-${currentSlide * 100}%)`,
-            transition: "transform 0.5s ease-in-out", // Add smooth transition
-          }}
-          >
-            {slide}
-          </div>
-        ))}
+      <div className="container float-right">
+        <div
+          className="card-slider card-container"
+          ref={sliderRef} 
+        >
+          {slides.map((slide, index) => (
+            <div
+              className="brand_card"
+              key={index}
+              style={{
+                transform: `translateX(-${currentSlide * 100}%)`,
+                transition: "transform 0.5s ease-in-out",
+              }}
+            >
+              {slide}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-
     </div>
   );
 }

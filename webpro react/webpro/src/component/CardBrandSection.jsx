@@ -20,10 +20,10 @@ export default function CardBrandSection() {
         </div>
       </div>
     </div>
-    <div className="text__details">
-      <p>Learn about the history, usage and variations of Lorem Ipsum, the industry's standard dummy </p>
+    <div className="text__details flex ">
+      <p className="w-[90%]">Learn about the history, usage and variations of Lorem Ipsum, the industry's standard dummy </p>
       <div className="text__img">
-        <img src={arrowimg} className="arrow_img"/>
+        <img src={arrowimg} className="arrow_img "/>
       </div>
     </div>
     </div>

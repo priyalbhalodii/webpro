@@ -396,16 +396,21 @@ section.navbar__section {
 }
 
 .left__section {
+  width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   /* padding: 100px 0; */
+  padding-top: 70px;
+  padding-bottom: 70px;
+  gap: 290px;
 }
 
 .main__title h2 {
   font-family: Timmana;
-  font-size: 100px;
+  font-size: 130px;
   font-weight: 400;
+  line-height: 110px;
   color: #ed5959;
   font-style: italic;
   text-transform: uppercase;
@@ -417,7 +422,7 @@ img.header_two {
 }
 
 img.header_bottom {
-  margin-top: 28px;
+  /* margin-top: 28px; */
 }
 
 .bottom__img img {
@@ -436,6 +441,9 @@ img.first__img {
   align-items: center;
   text-align: center;
   padding-bottom: 0;
+ 
+
+  /* z-index: 500; */
 }
 
 img.second__img {
@@ -967,6 +975,7 @@ img.icon_part {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  position:absolute;
 }
 
 .header__bg__section {
@@ -1201,7 +1210,7 @@ img.img__left {
 }
 
 .text__details {
-  display: flex;
+  /* display: flex; */
 }
 
 .text__details p {
@@ -1214,9 +1223,15 @@ img.img__left {
 .text__img {
   margin-top: 30px;
   background: gray;
-  height: 43px;
+  /* height: 43px; */
+  /* height: 40px; */
+  height: 40px;
+  width: 40px;
   border-radius: 70px;
+  /* padding: 10px; */
 }
+
+
 
 .main__details {
   background-color: #3E374A;
@@ -1993,7 +2008,19 @@ button.message__button {
 }
 .back-ground{
   background-color: white;
+  /* position: relative; */
 }
+/* .back-ground::before{
+  content: '';
+  background-image: './assets/images/Group 650.png';
+  background-size: cover;
+  position: absolute;
+  top: -25px;
+  right: 0;
+  width: 200px;
+  height: 200px; */
+  /* background: red; */
+/* } */
 .icon {
   background: #453b57;
   transition: all 0.5s ease-in-out;
@@ -2009,6 +2036,7 @@ button.message__button {
   
 }
 .bottom__img {
+  display: flex;
   height: 0; 
   overflow: hidden;
   transition: height 0.5s ease ;
