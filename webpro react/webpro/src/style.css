@@ -1922,3 +1922,112 @@ button.message__button {
   font-weight: 400;
   margin-top: 40px;
 }
+/* Keyframes for fade-in and slide-up */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px); /* Start 50px below the original position */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* End at the original position */
+  }
+}
+
+/* Apply the animation to the section */
+.contact_us_section {
+  opacity: 0; /* Initially hidden */
+  animation: fadeInUp 1s ease-out forwards; /* 1s duration, forwards keeps the final state */
+  animation-delay: 0.2s; /* Optional delay */
+}
+
+.form__details,
+.reviews__section {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.4s; /* Delays to make the animations appear in sequence */
+}
+
+.sub__reviwes {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.6s; /* Another delay to stagger review section elements */
+}
+/* Keyframes for fade-in and slide-up */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px); /* Start slightly below its original position */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* Move to its original position */
+  }
+}
+
+/* Apply the animation to the footer */
+.footer__section {
+  opacity: 0; /* Initially hidden */
+  animation: fadeInUp 1.2s ease-out forwards; /* Duration 1.2s */
+  animation-delay: 0.5s; /* Optional delay to let other content load first */
+}
+
+/* Apply animation to individual parts for more control */
+.footer__title, .footer_heading, .footer__link, .footer__bottom {
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+/* Delays for a staggered effect */
+.footer__title {
+  animation-delay: 0.5s;
+}
+
+.footer_heading {
+  animation-delay: 0.7s;
+}
+
+.footer__link {
+  animation-delay: 0.9s;
+}
+
+.footer__bottom {
+  animation-delay: 1.1s;
+}
+/* Keyframes for slide-in from the left */
+@keyframes slideInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-50px); /* Start slightly off-screen to the left */
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0); /* Move to the original position */
+  }
+}
+
+/* Apply the animation to the left-side image */
+.cilent__photo {
+  opacity: 0; /* Initially hidden */
+  animation: slideInLeft 1s ease-out forwards; /* 1s duration with smooth ease-out */
+  animation-delay: 0.3s; /* Optional delay for better timing with other elements */
+}
+
+/* Optionally, you can also animate the right-side content */
+.Cilent__details {
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+/* Define fadeInUp for the right-side content if needed */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px); /* Slightly below the original position */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
+  }
+}
