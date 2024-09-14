@@ -9,10 +9,10 @@ export default function CardSlider() {
     <CardBrandSection key={1} />,
     <CardBrandSection key={2} />,
     <CardBrandSection key={3} />,
-    <CardBrandSection key={3} />,
-    <CardBrandSection key={3} />,
-    <CardBrandSection key={3} />,
-    <CardBrandSection key={3} />,
+    <CardBrandSection key={4} />,
+    <CardBrandSection key={5} />,
+    <CardBrandSection key={6} />,
+    <CardBrandSection key={7} />,
     // Add more CardBrandSection components as needed
   ];
 

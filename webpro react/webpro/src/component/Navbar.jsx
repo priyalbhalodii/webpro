@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import logo from "../assets/images/logo.png";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"; // Import the arrow right
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -9,47 +10,83 @@ function Navbar() {
   };
 
   return (
-    <section className="navbar__section h-[80px]">
-      <div className="container">
-        <div className="row">
-          <div className="main__section flex justify-between w-full">
-            <div className="left__sectionn">
-              <img src={logo} className="logo__section" alt="Logo" /> 
-            </div>
-            <div className="right__section">
-              <button className="toggle__menu-btn" onClick={toggleMenu}>
-               {isMenuOpen ? <span className="open-icon animate">✖</span> :
-                <span className="open-icon">☰</span>}
-              </button>
-
-              {/* Use Bootstrap classes for offcanvas navbar */}
-              <div className={`offcanvas offcanvas-end ${isMenuOpen ? 'show' : ''}`} tabIndex="-1" id="menu" aria-labelledby="menuLabel">
-                <div className="offcanvas-header">
-                  {/* <h5 className="offcanvas-title" id="menuLabel">menu</h5> */}
-                  <button type="button" className="btn-close" onClick={toggleMenu} aria-label="Close">
-
-                  
+    <header className="section-header bg-white ">
+      <div className="container flex align-items-center">
+        <div className="header-logo ">
+          <a href="index.html " className=" ">
+            <img src={logo} alt="Whitelabel" className="h-[50px]" />
+          </a>
+        </div>
+        <div className={`header-nav  ${isMenuOpen ? "open" : " none"}`}>
+          <div className="nav-main">
+            <ul className="navbar-nav">
+              <li className="nav-item dropdown-item menu-children">
+                <a className="drop-nav-item" href="products.html">
+                  More Products
+                </a>
+                <div className="toggal-nav">
+                  <h3>More Products</h3>
+                  <ul className="dropdown-menu-item ">
+                    <li className="item-menu ">
+                      <a
+                        href="hospital_management_app.html"
+                        className="nav-font "
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <li className="item-menu">
+                      <a href="grocery_delivery_app.html" className="nav-font">
+                        Our Service
+                      </a>
+                    </li>
+                    <li className="item-menu">
+                      <a href="food_delivery_app.html" className="nav-font">
+                        About Us
+                      </a>
+                    </li>
+                    <li className="item-menu">
+                      <a href="school_management_app.html" className="nav-font">
+                        Enquery
+                      </a>
+                    </li>
+                    <li className="item-menu">
+                      <a href="school_management_app.html" className="nav-font">
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                  <button className=" border-black px-6 py-3 rounded-[50px] border-[2px] flex ">
+                    <a href="school_management_app.html" className="nav-font">
+                      Start Your Project
+                    </a>
+                    <span className=" p-3 h-6 w-6 bg-green-500">
+                      <FontAwesomeIcon
+                        icon={faArrowRight}
+                        className="h-6 w-6"
+                      />
+                    </span>
                   </button>
                 </div>
-                <div 
-  className={` fixed top-0 right-0 h-full bg-[#453b57]  w-[25vw] transform transition-transform duration-300 ease-in-out  mt-[80px]
-             ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} w-full`} 
->
-  <ul className="flex flex-col ml-[20px] mt-[20px] h-full space-y-10 text-white text-xl">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</div>
-
-
-              </div>
-            </div>
+                <span className="menuTriggle">
+                  <i className="fas fa-chevron-down"></i>
+                </span>
+              </li>
+              <li className="nav-item">
+                <a href="contact_us.html">Contact Us</a>
+              </li>
+            </ul>
           </div>
+
+          <button onClick={toggleMenu} className="toggle-menu">
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </button>
+          <div className={`bodyoverlay ${isMenuOpen ? " open" : ""}`}></div>
         </div>
       </div>
-    </section>
+    </header>
   );
 }
 
