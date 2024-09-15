@@ -7,15 +7,15 @@ import image4  from "../assets/images/image 4.png"
 import header_bottom from "../assets/images/header_bottom.png"
 import header_two from "../assets/images/header_two.png"
 
-import header_img from "../assets/images/Red And blue.png"
+import header_img from "../assets/images/Group 762.png"
 
 export default function HeroSection() {
-    console.log( "image4",image4);
+    
   return (
     <section className=" header__section bottom__bg__section relative header__bg__section  ">
         <div className='header_img_container '>
   <video 
-    src="https://res.cloudinary.com/drvcqytfb/video/upload/v1726309552/pqikimbsqiqzwrlhuvfr.mp4" 
+    src="https://res.cloudinary.com/drvcqytfb/video/upload/v1726315593/qvd8cp83uh08sqxhzkbz.mp4" 
     autoPlay 
     muted 
     loop 
@@ -51,7 +51,7 @@ export default function HeroSection() {
       </div>
       <img src={header_bottom} className="mt-0" alt="header_bottom"/>
       
-      <div className="bottom__img ">
+      <div className="hero-section-bottom__img ">
         <img src={upstockImg} className="first__img"/>
         <img src={ellipse} className="second__img"/>
         <img src={fiverrImg} className="first__img"/>

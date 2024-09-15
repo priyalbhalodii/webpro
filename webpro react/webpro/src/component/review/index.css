@@ -28,11 +28,14 @@
   }
   
   .prev-button {
-    left: 130px;
+    left: 40px;
+    top: 200px;
     z-index: 2;
   }
   
   .next-button {
-    right:130px;
+    right:40px;
+    top: 200px;
+
   }
   

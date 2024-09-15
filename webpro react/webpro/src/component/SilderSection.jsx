@@ -16,14 +16,14 @@ export default function SilderSection() {
   return (
     <section className="silder_section" >
      <div className="container back-ground relative">
-      <div className='absolute top-[-80px] right-[0px] h-[200px] w-[200px] '>
-        <img src={afterImg} alt="" className='h-full w-full bg-cover '/>
+      <div className='absolute top-[-60px] right-[0px] h-[150px] w-[150px] '>
+        <img src={afterImg} alt="" className='h-full w-full object-cover '/>
 
       </div>
-      <div className='absolute top-[-80px] right-[0px] h-[200px] w-[200px] '>
+      {/* <div className='absolute top-[-80px] right-[0px] h-[200px] w-[200px] '>
         <img src={maskgroup} alt="" className='h-full w-full bg-cover'/>
 
-      </div>
+      </div> */}
       <div className='cards-container' >
         {/* Card 1 */}
         {/* <motion.div 

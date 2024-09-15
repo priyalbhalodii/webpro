@@ -376,7 +376,7 @@ section.navbar__section {
 }
 
 .header__section h1 {
-  -webkit-text-stroke-color: #ed5959;
+  -webkit-text-stroke-color: #fff;
   -webkit-text-stroke-width: 1px;
   background-color: transparent;
   font-size: 123px;
@@ -1779,6 +1779,7 @@ img.img__left {
 .our_services_img{
   position: relative;
   min-width: 100vw;
+padding: 100px 0;
 }
 
 .our_services_img:before {
@@ -1837,8 +1838,12 @@ img.img__left {
 
 .Cilent__img {
   padding-bottom: 30px;
+  
 }
-
+.Cilent__img img {
+  width: 200px;
+  
+}
 .email__details h5 {
   color: #958AA8;
   font-size: 27px;
@@ -2042,11 +2047,29 @@ button.message__button {
   transition: height 0.5s ease ;
 }
 
+
+
 .bottom__img.show {
   height: 450px; /* Now it's correct */
   
 }
-
+.container.herosection__container {
+  position: relative;
+}
+.hero-section-bottom__img {
+  display: flex;
+  /* height: 0; */
+  width: 100%;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  position: absolute;
+  top: 850px;
+  right: 0;
+  left: 10%;
+  bottom: -56px;
+  margin: 0 auto;
+  text-align: center;
+}
 .faq__main__section {
   padding: 100px 0;
 }

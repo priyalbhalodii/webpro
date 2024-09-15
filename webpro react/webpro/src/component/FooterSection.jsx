@@ -1,5 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 export default function FooterSection() {
   return (
@@ -35,7 +36,31 @@ export default function FooterSection() {
                         </div>
                     </div>
                     <div >
-                    <FontAwesomeIcon icon="fa-brands fa-facebook-f" className="footer__icon" />
+                        
+                    <div className="flex space-x-10 mt-10"> {/* Added flex container for icons */}
+                        <a href="#" className="text-[#fff] ">
+                            <FontAwesomeIcon 
+                                icon={faFacebookF} 
+                                size="xl" // Increased size to "2xl"
+                                className="p-3 h-6 w-6 rounded-full bg-[#453B57] "
+                            />
+                        </a>
+                        <a href="#" className="text-[#fff] ">
+                            <FontAwesomeIcon 
+                                icon={faInstagram} 
+                                size="xl" // Increased size to "2xl"
+                                className="p-3 rounded-full bg-[#453B57] "  
+                            />
+                        </a>
+                        <a href="#" className="text-[#fff] ">
+                            <FontAwesomeIcon 
+                                icon={faTwitter} 
+                                size="xl" // Increased size to "2xl"
+                                className="p-3 rounded-full bg-[#453B57] "
+                            />
+                        </a>
+                    </div>
+                    {/* <FontAwesomeIcon icon="fa-brands fa-facebook-f" className="footer__icon" /> */}
                     </div>
                 </div>
             </div>
