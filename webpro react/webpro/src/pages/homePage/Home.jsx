@@ -8,18 +8,14 @@ import OurServices from '../../component/OurServices'
 import OurProgessSection from '../../component/OurProgessSection'
 import OurWorkSection from '../../component/OurWorkSection'
 import OurResultSection from '../../component/OurResultSection'
-import CardSection from '../../component/CardSection'
-import BlogSection from '../../component/BlogSection';
-import Carousel from '../../component/Carousel';
-import Form from '../../component/Form';
-import AccordionWrapper from '../../component/Accordion/AccordionWrapper';
-import AccordionItem from '../../component/Accordion/AccordionItem';
-import CardSlider from '../../component/cardSlider/CardSlider';
+
+
 import ContactUs from '../../component/ContactUs';
 import FooterSection from '../../component/FooterSection';
 import OurClients from '../../component/OurClients.jsx';
 import AccordionSection from '../../component/Accordion/AccordionSection.jsx';
 import StickyComponent from '../../component/StickyComponent.jsx';
+
 
 
 export default function Home() {
@@ -81,6 +77,8 @@ export default function Home() {
    
           
           <FooterSection/>
+          
+          
     </>
   );
 }
