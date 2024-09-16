@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import logo from "../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"; // Import the arrow right
+import { NavLink } from "react-router-dom"; // Import NavLink
+
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,53 +15,82 @@ function Navbar() {
     <header className="section-header bg-white fixed top-0 ">
       <div className="container flex align-items-center">
         <div className="header-logo ">
-          <a href="index.html " className=" ">
+          <NavLink to="/" className=" ">
+            {" "}
+            {/* Changed to NavLink */}
             <img src={logo} alt="Whitelabel" className="h-[50px]" />
-          </a>
+          </NavLink>
         </div>
         <div className={`header-nav  ${isMenuOpen ? "open" : " none"}`}>
           <div className="nav-main">
             <ul className="navbar-nav">
               <li className="nav-item dropdown-item menu-children">
-                <a className="drop-nav-item" href="products.html">
-                  More Products
-                </a>
+                <NavLink to="/" className="drop-nav-item">
+                  {" "}
+                  {/* Changed to NavLink */}
+                  More Pages
+                </NavLink>
                 <div className="toggal-nav">
                   <h3>More Products</h3>
                   <ul className="dropdown-menu-item ">
                     <li className="item-menu ">
-                      <a
-                        href="/"
-                        className="nav-font "
+                      <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                          `text-black relative after:absolute after:left-0 after:bottom-[-2px] after:h-[3px] after:w-full after:bg-red-500 after:transition-all after:duration-300 after:origin-left hover:after:scale-x-100 ${
+                            isActive
+                              ? "after:scale-x-100 text-red-500"
+                              : "after:scale-x-0"
+                          }`
+                        }
                       >
+                        {/* Changed to NavLink */}
                         Home
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="item-menu">
-                      <a href="grocery_delivery_app.html" className="nav-font">
+                      <NavLink
+                        to="/our-service"
+                        className={({ isActive }) =>
+                          `text-black relative after:absolute after:left-0 after:bottom-[-2px] after:h-[3px] after:w-full after:bg-red-500 after:transition-all after:duration-300 after:origin-left hover:after:scale-x-100 ${
+                            isActive
+                              ? "after:scale-x-100 text-red-500"
+                              : "after:scale-x-0"
+                          }`
+                        }
+                      >
+                        {/* Changed to NavLink */}
                         Our Service
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="item-menu">
-                      <a href="food_delivery_app.html" className="nav-font">
+                      <NavLink to="/" className="nav-font">
+                        {" "}
+                        {/* Changed to NavLink */}
                         About Us
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="item-menu">
-                      <a href="school_management_app.html" className="nav-font">
+                      <NavLink to="/" className="nav-font">
+                        {" "}
+                        {/* Changed to NavLink */}
                         Enquery
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="item-menu">
-                      <a href="school_management_app.html" className="nav-font">
+                      <NavLink to="/" className="nav-font">
+                        {" "}
+                        {/* Changed to NavLink */}
                         Contact Us
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                   <button className=" border-black px-6 py-3 rounded-[50px] border-[2px] flex ">
-                    <a href="school_management_app.html" className="nav-font">
+                    <NavLink to="/" className="nav-font">
+                      {" "}
+                      {/* Changed to NavLink */}
                       Start Your Project
-                    </a>
+                    </NavLink>
                     <span className=" p-3 h-6 w-6 bg-green-500">
                       <FontAwesomeIcon
                         icon={faArrowRight}
@@ -72,9 +103,7 @@ function Navbar() {
                   <i className="fas fa-chevron-down"></i>
                 </span>
               </li>
-              <li className="nav-item">
-                <a href="contact_us.html">Contact Us</a>
-              </li>
+              
             </ul>
           </div>
 

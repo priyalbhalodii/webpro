@@ -23,7 +23,7 @@ const ShrinkingHeader = ({ ComponentOne, ComponentTwo }) => {
     scrollYProgress.onChange((latest) => {
       const newPosition = latest > 0.23 ? "relative" : "sticky";
       setPosition(newPosition);
-      console.log("scrollYProgress value:", latest);
+      // console.log("scrollYProgress value:", latest);
     });
   }, [scrollYProgress]);
 

@@ -1,6 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function ContactUs() {
+    const [formData, setFormData] = useState({
+        username: '',
+        email: '',
+        phoneNumber: '',
+        message: ''
+    });
+
+    const handleChange = (event) => {
+        
+        setFormData({
+            ...formData,
+            [event.target.name]: event.target.value
+        });
+    };
+  
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        // Here you would typically handle form submission
+       
+    };
+
     return (
         <div>
             <div className="contact_us_section">
@@ -19,11 +41,11 @@ export default function ContactUs() {
                         <div className="row">
                             <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
                                 <div className="form__details">
-                                    <form>
-                                        <input type="text" id="fname" name="fname" placeholder="Username" className="white-input" /><br />
-                                        <input type="text" id="lname" name="lname" placeholder="Email" className="white-input" /><br />
-                                        <input type="text" id="lname" name="lname" placeholder="Phone number" className="white-input" /><br />
-                                        <input type="text" id="lname" name="lname" placeholder="How can we help you?" className="white-input bg_input" /><br />
+                                    <form onSubmit={handleSubmit}>
+                                        <input type="text" onChange={handleChange} id="firstName" name="username" placeholder="username" className="white-input" /><br />
+                                        <input  onChange={handleChange} type="text" id="lname" name="email" placeholder="Email" className="white-input" /><br />
+                                        <input  onChange={handleChange} type="number" id="lname" name="phoneNumber" placeholder="Phone number" className="white-input" /><br />
+                                        <textarea  onChange={handleChange} type="text" id="lname" name="message" placeholder="How can we help you?" className="white-input bg_input" /><br />
                                         <button className="message__button">Send message</button>
                                     </form>
                                 </div>
