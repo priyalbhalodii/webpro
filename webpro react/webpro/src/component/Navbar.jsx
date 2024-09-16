@@ -15,7 +15,7 @@ function Navbar() {
     <header className="section-header bg-white fixed top-0 ">
       <div className="container flex align-items-center">
         <div className="header-logo ">
-          <NavLink to="/" className=" ">
+          <NavLink to="/"  className=" ">
             {" "}
             {/* Changed to NavLink */}
             <img src={logo} alt="Whitelabel" className="h-[50px]" />
@@ -36,6 +36,7 @@ function Navbar() {
                     <li className="item-menu ">
                       <NavLink
                         to="/"
+                        onClick={toggleMenu}
                         className={({ isActive }) =>
                           `text-black relative after:absolute after:left-0 after:bottom-[-2px] after:h-[3px] after:w-full after:bg-red-500 after:transition-all after:duration-300 after:origin-left hover:after:scale-x-100 ${
                             isActive
@@ -50,6 +51,7 @@ function Navbar() {
                     </li>
                     <li className="item-menu">
                       <NavLink
+                      onClick={toggleMenu}
                         to="/our-service"
                         className={({ isActive }) =>
                           `text-black relative after:absolute after:left-0 after:bottom-[-2px] after:h-[3px] after:w-full after:bg-red-500 after:transition-all after:duration-300 after:origin-left hover:after:scale-x-100 ${
@@ -64,7 +66,8 @@ function Navbar() {
                       </NavLink>
                     </li>
                     <li className="item-menu">
-                      <NavLink    to="/About Us"
+                      <NavLink    to="/about-us"
+                      onClick={toggleMenu}
                         className={({ isActive }) =>
                           `text-black relative after:absolute after:left-0 after:bottom-[-2px] after:h-[3px] after:w-full after:bg-red-500 after:transition-all after:duration-300 after:origin-left hover:after:scale-x-100 ${
                             isActive
@@ -78,7 +81,8 @@ function Navbar() {
                       </NavLink>
                     </li>
                     <li className="item-menu">
-                      <NavLink    to="/Inquiry"
+                      <NavLink    to="/inquiry"
+                      onClick={toggleMenu}
                         className={({ isActive }) =>
                           `text-black relative after:absolute after:left-0 after:bottom-[-2px] after:h-[3px] after:w-full after:bg-red-500 after:transition-all after:duration-300 after:origin-left hover:after:scale-x-100 ${
                             isActive
@@ -92,7 +96,8 @@ function Navbar() {
                       </NavLink>
                     </li>
                     <li className="item-menu">
-                      <NavLink    to="/Contact Us"
+                      <NavLink    to="/contact-us"
+                      onClick={toggleMenu}
                         className={({ isActive }) =>
                           `text-black relative after:absolute after:left-0 after:bottom-[-2px] after:h-[3px] after:w-full after:bg-red-500 after:transition-all after:duration-300 after:origin-left hover:after:scale-x-100 ${
                             isActive
@@ -107,7 +112,8 @@ function Navbar() {
                     </li>
                   </ul>
                   <button className=" border-black px-6 py-3 rounded-[50px] border-[2px] flex ">
-                    <NavLink    to="/Start Your Project"
+                    <NavLink    to="/new-project"
+                    onClick={toggleMenu}
                         className={({ isActive }) =>
                           `text-black relative after:absolute after:left-0 after:bottom-[-2px] after:h-[3px] after:w-full after:bg-red-500 after:transition-all after:duration-300 after:origin-left hover:after:scale-x-100 ${
                             isActive
