@@ -1,11 +1,17 @@
 import React from 'react'
 import clientphoto from '../../assets/images/cilent_photo.png'
 import starimage from '../../assets/images/star_image.png'
+import afterImg from '../../assets/images/Group 650.png'
+
 
 export default function ReviewCard() {
   return (
-    <div className="our_cilents_section">
-    <div className="container">
+    <div className="our_cilents_section ">
+        
+    <div className="container relative">
+    <div className="absolute  top-[-50px] z-[-1] right-[-10px] h-[130px] w-[130px] animate-scaleUpDown">
+      <img src={afterImg} alt="" className="h-full w-full object-cover" />
+    </div>
     <div className="row justify-between">
         <div className="lg:w-[25%] md:w-[25%] sm:w-full w-full">
             <div className="cilent__photo">

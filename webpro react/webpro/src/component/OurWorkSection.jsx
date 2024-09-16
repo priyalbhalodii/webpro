@@ -5,7 +5,7 @@ import CardSlider from './cardSlider/CardSlider'
 
 export default function OurWorkSection() {
   return (
-    <section className="our_work_section">
+    <section className="our_work_section relative">
         <div className="container right_side">
           <div className="row">
             <div className="title">
@@ -18,6 +18,12 @@ export default function OurWorkSection() {
             </div>
           </div>
         </div>
+        <div 
+        className="absolute inset-x-0 bottom-0 h-[6px] w-[70%] mx-auto"
+        style={{
+          background: 'linear-gradient(90deg, #453B57, #ED5959 47.16%, #453B57',
+        }}
+      ></div>
       </section>
       
   )

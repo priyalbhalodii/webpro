@@ -1,31 +1,15 @@
 import { useScroll, useTransform ,motion} from 'framer-motion';
 import React, { useRef, useState } from 'react'
+import afterImg from "../assets/images/Ellipse 57.png"
 
 export default function OurSection () {
-  // const ref=useRef();
-  // const { scrollYProgress}=useScroll({
-  //   target:ref,
-  //   offset:["start end","end start"],
-    
-  // });
-  // const opacity=useTransform(scrollYProgress,[0.5,1],[1,0]);
-  // const scale=useTransform(scrollYProgress,[0,0.1],[1,0.8]);
-  // const position=useTransform(scrollYProgress,(pos)=> {return pos===1? "relative":"sticky"})
-  // const y = useTransform(scrollYProgress, [0, 0.2], [0, -200]);
-
-
-
-  // console.log( "y",y);
-
-  //   console.log( "scrollYProgress",scrollYProgress);
-
-  
+ 
   return (
     
         
 
-  <section className="our_services  ">
-    {/* <div className='our_services_img'> */}
+  <section className="our_services ">
+    
 
     
     <div className="services__before">
@@ -52,7 +36,11 @@ export default function OurSection () {
       </div>
     </div>
     </div>
-    {/* </div> */}
+    {/* <div className="absolute top-0 right-[-300px] h-[100%] w-[80%] ">
+      <img src={afterImg} alt="" className="h-full w-full object-cover" />
+    </div> */}
+
+    
   </section>
  
   )

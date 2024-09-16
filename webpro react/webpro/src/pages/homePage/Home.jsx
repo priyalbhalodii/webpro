@@ -19,6 +19,7 @@ import ContactUs from '../../component/ContactUs';
 import FooterSection from '../../component/FooterSection';
 import OurClients from '../../component/OurClients.jsx';
 import AccordionSection from '../../component/Accordion/AccordionSection.jsx';
+import StickyComponent from '../../component/StickyComponent.jsx';
 
 
 export default function Home() {
@@ -32,22 +33,22 @@ export default function Home() {
   return (
     < >
       <HeroSection />
-      <div className='best_services_section our_services_img' ref={ourSectionRef} >
-        <motion.div  className=''
+      {/* <div className='best_services_section our_services_img'  >
+        <div  className=''
          
           style={{
             // position:  useTransform(scrollYProgress, (scroll)=>scroll=="1"? "relative":"sticky"),
-            position: 'sticky',
-            top: 0,
-            zIndex: -1, // Ensure OurSection stays above SilderSection
-            width: `${scrollYProgress * 100}px`,
-            // Apply fade out and shrink effect
-            opacity: useTransform(scrollYProgress, [0, 1], [1, 0.2]), // Opacity decreases as you scroll
-            scale: useTransform(scrollYProgress, [0, 1], [1, 0.8]), // Shrinks as you scroll
+            // position: 'sticky',
+            // top: 0,
+            // zIndex: -1, // Ensure OurSection stays above SilderSection
+            // width: `${scrollYProgress * 100}px`,
+            // // Apply fade out and shrink effect
+            // opacity: useTransform(scrollYProgress, [0, 1], [1, 0.2]), // Opacity decreases as you scroll
+            // scale: useTransform(scrollYProgress, [0, 1], [1, 0.8]), // Shrinks as you scroll
           }}
         >
           <OurSection />
-        </motion.div>
+        </div>
 
         <div 
           style={{
@@ -57,7 +58,13 @@ export default function Home() {
         >
           <SilderSection />
         </div>
-      </div>
+      </div> */}
+       <StickyComponent
+      ComponentOne={
+      OurSection 
+    }
+      ComponentTwo={SilderSection }
+    />
        <OurServices/>
     <OurProgessSection/>
     <OurResultSection/>

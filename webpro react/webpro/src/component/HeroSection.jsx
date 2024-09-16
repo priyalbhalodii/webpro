@@ -12,15 +12,29 @@ import header_img from "../assets/images/Group 762.png"
 export default function HeroSection() {
     
   return (
-    <section className=" header__section bottom__bg__section relative header__bg__section  ">
+    <section className=" mb-[100px] header__section bottom__bg__section relative header__bg__section  ">
         <div className='header_img_container '>
   <video 
-    src="https://res.cloudinary.com/drvcqytfb/video/upload/v1726315593/qvd8cp83uh08sqxhzkbz.mp4" 
+    src="https://media.istockphoto.com/id/1480282371/video/4k-aerial-view-day-to-night-hyper-lapse-footage-of-above-captain-cook-bridge-with-brisbane.mp4?s=mp4-640x640-is&k=20&c=4NkOgyaCVl371bE2ebMWdns6u3XQNG4GVtDskZM5bNw=" 
     autoPlay 
     muted 
     loop 
     className='header_img w-full h-full object-cover' 
   /> 
+  {/* <video 
+    src="https://media.istockphoto.com/id/1036743030/video/business-people-listening-to-their-asian-colleague-holding-a-presentation-in-the-glass.mp4?s=mp4-640x640-is&k=20&c=1EyI19ycNEjDHa1hJQPsYRzCABmwJ_NELuFniFo9JJs=" 
+    autoPlay 
+    muted 
+    loop 
+    className='header_img w-full h-full object-cover' 
+  />  */}
+  {/* <video 
+    src="https://res.cloudinary.com/drvcqytfb/video/upload/v1726315593/qvd8cp83uh08sqxhzkbz.mp4" 
+    autoPlay 
+    muted 
+    loop 
+    className='header_img w-full h-full object-cover' 
+  />  */}
   <img 
     src={header_img} 
     alt=""  

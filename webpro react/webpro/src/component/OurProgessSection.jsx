@@ -1,5 +1,7 @@
 import React, { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion';
+import centerImg from "../assets/images/Ellipse 57 (1).png"
+
 export default function OurProgessSection() {
   const targetRef=useRef()
   const { scrollYProgress } = useScroll({
@@ -10,6 +12,9 @@ let opacity=useTransform(scrollYProgress, [0, 0.5], [1, 0]) // Opacity decreases
 let scale= useTransform(scrollYProgress, [0, 1], [1, 0.5])
   return (
     <section className="Our__Process__section relative " ref={targetRef}>
+       <div className="absolute top-[0%] left-[10px] h-[500px] w-[130px] animate-scaleUpDown">
+      <img src={centerImg} alt="" className="h-full w-full object-cover" />
+    </div>
     <div className="container">
       {/* header */}
       <motion.div className="our_process__title sticky our-progress-header text-center" style={{opacity,scale}} >

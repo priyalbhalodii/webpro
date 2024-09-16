@@ -19,7 +19,9 @@ body {
   overflow-x: hidden;
   font-style: normal;
 }
-
+/* html{
+  overflow-x: hidden;
+} */
 h1 {
   font-family: "Lato";
   font-style: normal;
@@ -774,7 +776,7 @@ img.icon_part {
 
 .button__text ul {
   margin-left: 0;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .about__img {
@@ -855,7 +857,7 @@ img.icon_part {
   color: #958aa8 !important;
 }
 
-.process__Section .row::after {
+/* .process__Section .row::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -864,11 +866,12 @@ img.icon_part {
   left: 0;
   background-color: #000;
   z-index: 1;
-}
+} */
 
 .process__Section .row {
   position: relative;
   padding-bottom: 50px;
+  border-bottom: 2px solid black;
 }
 
 .process__Section .row:last-child {
@@ -1784,13 +1787,15 @@ padding: 100px 0;
 
 .our_services_img:before {
   content: '';
+  border-radius: 20px;
   position: absolute;
   top: 0;
-  right: -100%; /* Start the image off-screen */
-  width: 30%;
+  
+   right: 200px; 
+  width: 60%;
 
-  height: 500px;
-  background-image: url(../src/assets/images/shadow.png);
+  height: 100%;
+  background-image: url(../src/assets/images/Ellipse\ 57.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;

@@ -4,6 +4,7 @@ import maskgroup from  '../assets/images/Mask group.png'
 import bottomimage from '../assets/images/image 10.png'
 import CardSection from './CardSection';
 import afterImg from '../assets/images/Group 650.png'
+import centerImg from '../assets/images/Ellipse 57 (1).png'
 
 
 export default function SilderSection() {
@@ -11,39 +12,28 @@ export default function SilderSection() {
     
 //   );
 //  let section = useRef()
-
+const data=[1,2,3]
 
   return (
-    <section className="silder_section" >
-     <div className="container back-ground relative">
-      <div className='absolute top-[-60px] right-[0px] h-[150px] w-[150px] '>
+    <section className="silder_section relative " >
+       <div className="absolute top-[50%] left-[0px] h-[500px] w-[130px] animate-scaleUpDown">
+      <img src={centerImg} alt="" className="h-full w-full object-cover" />
+    </div>
+     <div className="container  relative">
+      {/* <div className='absolute top-[-50px] right-[20px] h-[130px] w-[130px] '>
         <img src={afterImg} alt="" className='h-full w-full object-cover '/>
 
-      </div>
-      {/* <div className='absolute top-[-80px] right-[0px] h-[200px] w-[200px] '>
-        <img src={maskgroup} alt="" className='h-full w-full bg-cover'/>
-
       </div> */}
-      <div className='cards-container' >
-        {/* Card 1 */}
-        {/* <motion.div 
-          
-        > */}
-        <CardSection open={true}/>
-      {/* </motion.div> */}
-        {/* <motion.div 
-          
-        > */}
-        <CardSection/>
-      {/* </motion.div> */}
-      {/* card 2 */}
-     
-      {/* card 3 */}
-      
-        <CardSection/>
-     
-      <CardSection/>
+      <div className="absolute top-[-50px] right-[20px] h-[130px] w-[130px] animate-scaleUpDown">
+      <img src={afterImg} alt="" className="h-full w-full object-cover" />
     </div>
+     
+    <div className="cards-container">
+          {data.map((item, index) => { 
+           return index===0 ?<CardSection key={index}  open={true}/> :<CardSection key={index} />
+           
+          })}
+        </div>
     </div>
    </section>
   )

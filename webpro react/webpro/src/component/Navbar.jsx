@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <header className="section-header bg-white ">
+    <header className="section-header bg-white fixed top-0 ">
       <div className="container flex align-items-center">
         <div className="header-logo ">
           <a href="index.html " className=" ">
@@ -29,7 +29,7 @@ function Navbar() {
                   <ul className="dropdown-menu-item ">
                     <li className="item-menu ">
                       <a
-                        href="hospital_management_app.html"
+                        href="/"
                         className="nav-font "
                       >
                         Home
