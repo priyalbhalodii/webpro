@@ -4,6 +4,7 @@ import afterImg from "../assets/images/Ellipse 57.png"
 
 export default function OurSection () {
  
+  
   return (
     
         

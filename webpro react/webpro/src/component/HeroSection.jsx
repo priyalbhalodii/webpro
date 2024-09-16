@@ -39,8 +39,8 @@ export default function HeroSection() {
         <div className="row">
           <div className="left__section">
             <motion.div className="heading__part w-[45%]"
-             initial={{ opacity: 0, x: -50 }} // Initial state
-             animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -50 }} // Animation when in view
+             initial={{ opacity: 0, x: -50,scale:1 }} // Initial state
+             whileInView={{ opacity: 1, x: 0,scale:1 }} // Animation when in view
              transition={{ duration: 1, ease: 'easeOut' }} // Transition options
             >
               <h1>Webpro</h1>
@@ -49,8 +49,8 @@ export default function HeroSection() {
               </p>
             </motion.div>
             <motion.div className="main__title w-[45%]"
-            initial={{ opacity: 0, x: 50 }} // Initial state
-            animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }} // Animation when in view
+            initial={{ opacity: 0, x: 50,scale:1 }} // Initial state
+            whileInView={{ opacity: 1, x: 0,scale:1 }} // Animation when in view
             transition={{ duration: 1, ease: 'easeOut' }} // Transition options
             >
               <h2>
@@ -59,14 +59,14 @@ export default function HeroSection() {
             </motion.div>
           </div>
           <motion.img src={header_bottom} className="mt-0" alt="header_bottom"
-            initial={{ opacity: 0,scale:0.8 }} // Initial state
-            animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.8 }} // Animation when in view
+            initial={{ opacity: 0, x: 0,scale:1 }} // Initial state
+            whileInView={{ opacity: 1, x: 0,scale:1 }} // Animation when in view
             transition={{ duration: 1, ease: 'easeOut' }} // Transition options
           />
           
           <motion.div className="hero-section-bottom__img"
-          initial={{ opacity: 0,scale:0.8 }} // Initial state
-          animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.8 }} // Animation when in view
+          initial={{ opacity: 0, x: 0,scale:0.8 }} // Initial state
+          whileInView={{ opacity: 1, x: 0,scale:1 }} // Animation when in view
           transition={{ duration: 1, ease: 'easeOut' }} // Transition options
           >
             <img src={upstockImg} className="first__img" alt="Upstock" />

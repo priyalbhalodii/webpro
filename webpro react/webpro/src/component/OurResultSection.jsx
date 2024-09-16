@@ -7,22 +7,34 @@ import SilderSection from './SilderSection'
 import CardSlider from './cardSlider/CardSlider'
 import centerImg from "../assets/images/Mask group (3).png"
 import centerImg2 from "../assets/images/Ellipse 60.png"
+import {motion } from 'framer-motion'
+
 
 
 export default function OurResultSection() {
   return (
-    <div className='relative'>
+    <div className='relative w-[102vw]'>
      <section className="our_work_section relative">
       <div className="container right_side">
-        <div className="row">
-          <div className="title">
+        <div className="row ">
+          <motion.div className="title"
+            initial={{ opacity: 0, y: 0,scale:0.8 }} // Initial state
+            whileInView={{ opacity: 1, y: 0,scale:1 }} // Animation when in view
+            transition={{ duration: 1, ease: 'easeOut' }} // Transition options
+          >
             <h1>Our Services</h1>
-          </div>
-          <div className="heading__title">
-            <h1>
+          </motion.div>
+          <div className="heading__title  "
+          
+          >
+            <motion.h1
+            initial={{ opacity: 0, y: 0,scale:0.8 }} // Initial state
+            whileInView={{ opacity: 1, y: 0,scale:1 }} // Animation when in view
+            transition={{ duration: 1, ease: 'easeOut' }} // Transition options
+            >
               Making <span>“brands”</span> a damn site better.
-            </h1>
-            <div className='slider_section '>
+            </motion.h1>
+            <div className='slider_section  '>
               <CardSlider />
             </div>
           </div>
@@ -47,10 +59,18 @@ export default function OurResultSection() {
    
           
           
-    <div className="our__result__section ">
+    <div className="our__result__section "
     
-    <div className="container">
-      <div className="">
+    >
+    
+    <div className="container"
+    
+    >
+      <motion.div className=""
+       initial={{ opacity: 0, y: 0,scale:0.8 }} // Initial state
+       whileInView={{ opacity: 1, y: 0,scale:1 }} // Animation when in view
+       transition={{ duration: 1, ease: 'easeOut' }} // Transition options
+      >
         <div className="our_process__title">
           <h5>Our Process</h5>
           <h1>We develop website this <span>“process”</span></h1>
@@ -98,10 +118,14 @@ export default function OurResultSection() {
             </div>
           </div>
       </div>
-    </div>
+    </motion.div>
     <div className="mainn__star">
       <div className="flex gap-[25px]">
-        <div className="lg:w-[65%] md:w-[74.7%] sm:w-full w-full">
+        <motion.div  className="lg:w-[65%] md:w-[74.7%] sm:w-full w-full"
+         initial={{ opacity: 0, x: -150,scale:1 }} // Initial state
+         whileInView={{ opacity: 1, x: 0,scale:1 }} // Animation when in view
+         transition={{ duration: 1, ease: 'easeOut' }} // Transition options
+        >
           <div className="star__img">
             <img src={subtractimg}/>
           </div>
@@ -110,8 +134,12 @@ export default function OurResultSection() {
             <span><p>star</p>
             Reviews</span>
           </div>
-        </div>
-        <div className="lg:w-[28%] md:w-[24.9%] sm:w-full w-full">
+        </motion.div>
+        <motion.div className="lg:w-[28%] md:w-[24.9%] sm:w-full w-full"
+         initial={{ opacity: 0, x: 150,scale:1 }} // Initial state
+         whileInView={{ opacity: 1, x: 0,scale:1 }} // Animation when in view
+         transition={{ duration: 1, ease: 'easeOut' }} // Transition options
+        >
           <div className="reviews__section">
             <div className="sub__reviwes">
               <h3>10+</h3>
@@ -126,7 +154,7 @@ export default function OurResultSection() {
               <span>experience</span>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
    </div>

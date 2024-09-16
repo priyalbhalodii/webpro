@@ -26,7 +26,11 @@ export default function ReviewSlider() {
   };
 
   return (
-    <div className="relative w-full h-[600px]">
+    <motion.div className="relative w-full h-[600px]"
+    initial={{ opacity: 0, y: 0,scale:0.8 }} // Initial state
+    whileInView={{ opacity: 1, y: 0,scale:1 }} // Animation when in view
+    transition={{ duration: 1, ease: 'easeOut' }} // Transition options
+    >
       <button
         className="absolute top-[40%] left-4 transform -translate-y-1/2 bg-gray-800 text-white rounded-full w-12 h-12 flex items-center justify-center z-10"
         onClick={handlePrevSlide}
@@ -61,6 +65,6 @@ export default function ReviewSlider() {
       >
         <FontAwesomeIcon icon={faChevronRight} />
       </button>
-    </div>
+    </motion.div>
   );
 }

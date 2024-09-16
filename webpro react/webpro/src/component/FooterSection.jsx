@@ -1,13 +1,17 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
-
+import {motion} from 'framer-motion'
 export default function FooterSection() {
   return (
     <div>
         <div className="footer__section">
             <div className="container">
-                <div className="row justify-center">
+                <motion.div className="row justify-center"
+                initial={{ opacity: 0, y: 0,scale:0.8 }} // Initial state
+                whileInView={{ opacity: 1, y: 0,scale:1 }} // Animation when in view
+                transition={{ duration: 1, ease: 'easeOut' }} // Transition options
+                >
                     <div className="footer__title text-center">
                         <h3>Advanced <span>Web Pro</span></h3>
                     </div>
@@ -62,7 +66,7 @@ export default function FooterSection() {
                     </div>
                     {/* <FontAwesomeIcon icon="fa-brands fa-facebook-f" className="footer__icon" /> */}
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div className="footer__bottom">
                 <p>© 2024 Adavnced web pro. All rights reserved.</p>

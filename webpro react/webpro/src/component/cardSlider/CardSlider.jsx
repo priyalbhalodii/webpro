@@ -43,7 +43,7 @@ export default function CardSlider() {
   }, [slides.length]); 
 
   return (
-    <div className="">
+    <div className=" ">
       <div className="container float-right">
         <div
           className="card-slider card-container"

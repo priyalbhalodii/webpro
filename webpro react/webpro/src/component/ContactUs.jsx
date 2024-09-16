@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 
 export default function ContactUs() {
     const [formData, setFormData] = useState({
@@ -27,7 +28,11 @@ export default function ContactUs() {
         <div>
             <div className="contact_us_section">
                 <div className="container">
-                    <div className="row">
+                    <motion.div className="row"
+                      initial={{ opacity: 0, y: 0,scale:0.8 }} // Initial state
+                      whileInView={{ opacity: 1, y: 0,scale:1 }} // Animation when in view
+                      transition={{ duration: 1, ease: 'easeOut' }} // Transition options
+                    >
                         <div className="title">
                             <h1>Contact Us</h1>
                         </div>
@@ -36,10 +41,14 @@ export default function ContactUs() {
                                 <span>“Advanced Web Pro”</span>
                             </h1>
                         </div>
-                    </div>
+                    </motion.div>
                     <div className="form__section">
                         <div className="row">
-                            <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
+                            <motion.div className="lg:w-[50%] md:w-[50%] sm:w-full w-full"
+                            initial={{ opacity: 0, x: -150,scale:1 }} // Initial state
+                            whileInView={{ opacity: 1, x: 0,scale:1 }} // Animation when in view
+                            transition={{ duration: 1, ease: 'easeOut' }} // Transition options
+                            >
                                 <div className="form__details">
                                     <form onSubmit={handleSubmit}>
                                         <input type="text" onChange={handleChange} id="firstName" name="username" placeholder="username" className="white-input" /><br />
@@ -49,8 +58,12 @@ export default function ContactUs() {
                                         <button className="message__button">Send message</button>
                                     </form>
                                 </div>
-                            </div>
-                            <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
+                            </motion.div>
+                            <motion.div className="lg:w-[50%] md:w-[50%] sm:w-full w-full"
+                            initial={{ opacity: 0, x: 150,scale:1 }} // Initial state
+                            whileInView={{ opacity: 1, x: 0,scale:1 }} // Animation when in view
+                            transition={{ duration: 1, ease: 'easeOut' }} // Transition options
+                            >
                                 <div className="reviews__section">
                                     <div className="sub__reviwes">
                                         <h3>Email</h3>
@@ -69,7 +82,7 @@ export default function ContactUs() {
                                         <span>10:00am To 07:00pm</span>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
 

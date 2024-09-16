@@ -7,7 +7,7 @@ import maskgroup from '../assets/images/Mask group (6).png';
 import bottomimage from '../assets/images/card_img.png';
 
 export default function CardSection({ open }) {
-  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.1 });
+  // const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.1 });
   const [showImage, setShowImage] = useState(open || false);
   const [isRotated, setIsRotated] = useState(false);
 
@@ -17,13 +17,14 @@ export default function CardSection({ open }) {
   };
 
   return (
-    <motion.div className="silderr__title card "
-    initial={{ opacity: 0, x: -500 }} // Initial state
-    animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -500 }} // Animation when in view
-    transition={{ duration: 1, ease: 'easeOut' }} // Transition options
-    ref={ref}
+    <div className="silderr__title card"
+  
     >
-      <div className="w-full ">
+      <motion.div className="w-full "
+      initial={{ opacity: 0, y: 0,scale:0.8 }} // Initial state
+      whileInView={{ opacity: 1, y: 0,scale:1 }} // Animation when in view
+      transition={{ duration: 1, ease: 'easeOut' }} // Transition options
+      >
         <div className="sub__title ">
           <span>01.</span>
           <h3>Web development</h3>
@@ -62,7 +63,7 @@ export default function CardSection({ open }) {
          <div className={`bottom__img ${showImage ? 'show' : ''}`}>
           <img src={bottomimage} alt="Bottom Image" className="img-fluid" />
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 }

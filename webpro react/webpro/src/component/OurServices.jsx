@@ -1,4 +1,6 @@
 import React from 'react'
+import useAnimate from '../hooks/useAnimate'
+import { motion } from 'framer-motion'
 import exclude from "../assets/images/Exclude.png"
 import icon from "../assets/images/icon.png"
 import Maskgroup from "../assets/images/Mask group (6).png"
@@ -6,22 +8,37 @@ import bottomRightImage from "../assets/images/Mask group (1).png" // Import the
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function OurServices() {
+  const slideInLeft = useAnimate({ animationType: 'slideInLeft' });
+  const slideInRight = useAnimate({ animationType: 'slideInRight' });
   return (
-    <section className="about__section relative"> {/* Make this section relative for positioning */}
+    <section className="about__section relative"
+   
+    > {/* Make this section relative for positioning */}
           
       <div className="container">
         <div className="row">
           <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
-            <div className="about__img">
+            <motion.div className="about__img" 
+            ref={slideInLeft.ref} 
+            initial={slideInLeft.initial}
+            animate={slideInLeft.controls}
+            transition={slideInLeft.transition}
+            >
               <img src={exclude} className="Exclude" alt="Exclude" />
               <div className="img_text">
                 <h2>10</h2>
                 <span>year of experience</span>
               </div>
-            </div>
+            </motion.div>
           </div>
 
-          <div className="lg:w-[50%] md:w-[50%] sm:w-full w-full">
+          <motion.div className="lg:w-[50%] md:w-[50%] sm:w-full w-full"
+          
+          ref={slideInRight.ref} // Applying fade-in animation
+          initial={slideInRight.initial}
+          animate={slideInRight.controls}
+          transition={slideInRight.transition}
+          >
             <div className="main__about">
               <div className="title">
                 <h1>our services</h1>
@@ -72,7 +89,7 @@ export default function OurServices() {
               </div>
 </div>
 
-          </div>
+          </motion.div>
         </div>
       </div>
 
