@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'; // Only import faChevronDown
 import maskgroup from '../assets/images/Mask group (6).png';
 import bottomimage from '../assets/images/card_img.png';
 
 export default function CardSection({ open }) {
-
+  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.1 });
   const [showImage, setShowImage] = useState(open || false);
   const [isRotated, setIsRotated] = useState(false);
 
@@ -15,7 +17,12 @@ export default function CardSection({ open }) {
   };
 
   return (
-    <div className="silderr__title card ">
+    <motion.div className="silderr__title card "
+    initial={{ opacity: 0, x: -500 }} // Initial state
+    animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -500 }} // Animation when in view
+    transition={{ duration: 1, ease: 'easeOut' }} // Transition options
+    ref={ref}
+    >
       <div className="w-full ">
         <div className="sub__title ">
           <span>01.</span>
@@ -56,6 +63,6 @@ export default function CardSection({ open }) {
           <img src={bottomimage} alt="Bottom Image" className="img-fluid" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
