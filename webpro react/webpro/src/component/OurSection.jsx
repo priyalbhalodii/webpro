@@ -8,7 +8,11 @@ export default function OurSection () {
     
         
 
-  <section className="our_services ">
+  <motion.section className="our_services "
+  initial={{ opacity: 0, y: 0,scale:0.8 }} // Initial state
+  whileInView={{ opacity: 1, y: 0,scale:1 }} // Animation when in view
+  transition={{ duration: 1, ease: 'easeOut' }} // Transition options
+  >
     
 
     
@@ -41,7 +45,7 @@ export default function OurSection () {
     </div> */}
 
     
-  </section>
+  </motion.section>
  
   )
 }
