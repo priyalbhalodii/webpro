@@ -115,7 +115,7 @@ function Navbar() {
                     <NavLink    to="/new-project"
                     onClick={toggleMenu}
                         className={({ isActive }) =>
-                          `text-black relative after:absolute after:left-0 after:bottom-[-2px] after:h-[3px] after:w-full after:bg-red-500 after:transition-all after:duration-300 after:origin-left hover:after:scale-x-100 ${
+                          `text-black relative after:absolute after:left-0 after:bottom-[-2px] after:h-[3px] after:w-full after:bg-red-500 after:transition-all after:duration-300 after:origin-left hover:after:scale-x-100 no-underline ${
                             isActive
                               ? "after:scale-x-100 text-red-500"
                               : "after:scale-x-0"
