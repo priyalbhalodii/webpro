@@ -64,21 +64,42 @@ function Navbar() {
                       </NavLink>
                     </li>
                     <li className="item-menu">
-                      <NavLink to="/" className="nav-font">
+                      <NavLink    to="/About Us"
+                        className={({ isActive }) =>
+                          `text-black relative after:absolute after:left-0 after:bottom-[-2px] after:h-[3px] after:w-full after:bg-red-500 after:transition-all after:duration-300 after:origin-left hover:after:scale-x-100 ${
+                            isActive
+                              ? "after:scale-x-100 text-red-500"
+                              : "after:scale-x-0"
+                          }`
+                        }>
                         {" "}
                         {/* Changed to NavLink */}
                         About Us
                       </NavLink>
                     </li>
                     <li className="item-menu">
-                      <NavLink to="/" className="nav-font">
+                      <NavLink    to="/Inquiry"
+                        className={({ isActive }) =>
+                          `text-black relative after:absolute after:left-0 after:bottom-[-2px] after:h-[3px] after:w-full after:bg-red-500 after:transition-all after:duration-300 after:origin-left hover:after:scale-x-100 ${
+                            isActive
+                              ? "after:scale-x-100 text-red-500"
+                              : "after:scale-x-0"
+                          }`
+                        }>
                         {" "}
                         {/* Changed to NavLink */}
-                        Enquery
+                        Inquiry
                       </NavLink>
                     </li>
                     <li className="item-menu">
-                      <NavLink to="/" className="nav-font">
+                      <NavLink    to="/Contact Us"
+                        className={({ isActive }) =>
+                          `text-black relative after:absolute after:left-0 after:bottom-[-2px] after:h-[3px] after:w-full after:bg-red-500 after:transition-all after:duration-300 after:origin-left hover:after:scale-x-100 ${
+                            isActive
+                              ? "after:scale-x-100 text-red-500"
+                              : "after:scale-x-0"
+                          }`
+                        }>
                         {" "}
                         {/* Changed to NavLink */}
                         Contact Us
@@ -86,7 +107,14 @@ function Navbar() {
                     </li>
                   </ul>
                   <button className=" border-black px-6 py-3 rounded-[50px] border-[2px] flex ">
-                    <NavLink to="/" className="nav-font">
+                    <NavLink    to="/Start Your Project"
+                        className={({ isActive }) =>
+                          `text-black relative after:absolute after:left-0 after:bottom-[-2px] after:h-[3px] after:w-full after:bg-red-500 after:transition-all after:duration-300 after:origin-left hover:after:scale-x-100 ${
+                            isActive
+                              ? "after:scale-x-100 text-red-500"
+                              : "after:scale-x-0"
+                          }`
+                        }>
                       {" "}
                       {/* Changed to NavLink */}
                       Start Your Project
